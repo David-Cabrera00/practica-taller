@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Pixel Perfect - Completo con Todos los Componentes</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#FDFBF7] text-stone-900 font-sans antialiased">
+
+    <!-- 1. HEADER / NAVEGACIÓN SUPERIOR -->
+    <header class="flex justify-between items-center px-8 py-4 bg-white border-b border-stone-200 sticky top-0 z-50 shadow-xs">
+        <div class="flex items-center gap-6">
+            <div class="w-10 h-10 bg-stone-900 text-white rounded-full flex items-center justify-center font-black text-xs tracking-tighter">CRUST</div>
+            <nav class="hidden md:flex gap-6 text-xs font-black text-stone-800 tracking-wider">
+                <a href="#" class="hover:text-orange-600 transition">HOME</a>
+                <a href="#" class="hover:text-orange-600 transition">MENU</a>
+                <a href="#" class="hover:text-orange-600 transition">CATERING</a>
+                <a href="#" class="hover:text-orange-600 transition">ORDER ONLINE</a>
+            </nav>
+        </div>
+        <div class="hidden lg:flex items-center gap-6 text-xs font-bold text-stone-700">
+            <a href="#" class="hover:text-orange-600 transition">ABOUT</a>
+            <a href="#" class="hover:text-orange-600 transition">CONTACT</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <button class="bg-orange-600 text-white px-6 py-2.5 rounded-full font-bold text-xs tracking-wider shadow-md hover:bg-orange-700 transition">
+                CALL NOW
+            </button>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION PRINCIPAL -->
+    <section class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="space-y-6">
+            <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tight leading-none text-stone-900">
+                For Delicious, Made-From Scratch Pizzas
+            </h1>
+            <p class="text-stone-600 text-sm md:text-base leading-relaxed">
+                Makisq dba ohesai buia iueic aisc aiscas oreet duis elementum viverra tellus ac feugiat.
+            </p>
+            <button class="bg-orange-500 text-white font-bold px-8 py-3.5 rounded-full shadow-lg hover:bg-orange-600 transition text-sm">
+                Order Online
+            </button>
+        </div>
+        
+        <!-- Contenedor de Imagen Principal -->
+        <div class="relative bg-stone-900 rounded-[2.5rem] overflow-hidden shadow-2xl h-80 md:h-96 flex items-center justify-center text-white border-4 border-white">
+            <span class="text-stone-400 font-medium">[ Imagen Principal / Pizza ]</span>
+        </div>
+    </section>
+
+    <!-- 3. GRILLA DE PRODUCTOS / MENÚ (4 COLUMNAS) -->
+    <section class="max-w-6xl mx-auto px-6 py-10">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-black uppercase tracking-wide text-stone-900">Our Menu</h2>
+            <span class="text-xs font-bold text-orange-600 cursor-pointer hover:underline tracking-wider">VIEW OUR COMPLETE MENU</span>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <!-- Card 1 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-100 flex flex-col items-center relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-sm">$12</span>
+                <div class="w-full h-32 bg-stone-200 rounded-2xl mb-4"></div>
+                <h3 class="font-bold text-sm text-center text-stone-900">CHICKEN PARM</h3>
+                <p class="text-[11px] text-stone-500 text-center mt-1 leading-tight">Delicious item description text here...</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-100 flex flex-col items-center relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-sm">$14</span>
+                <div class="w-full h-32 bg-stone-200 rounded-2xl mb-4"></div>
+                <h3 class="font-bold text-sm text-center text-stone-900">CHICKEN ALFREDO</h3>
+                <p class="text-[11px] text-stone-500 text-center mt-1 leading-tight">Delicious item description text here...</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-100 flex flex-col items-center relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-sm">$10</span>
+                <div class="w-full h-32 bg-stone-200 rounded-2xl mb-4"></div>
+                <h3 class="font-bold text-sm text-center text-stone-900">SPAGHETTI</h3>
+                <p class="text-[11px] text-stone-500 text-center mt-1 leading-tight">Delicious item description text here...</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-100 flex flex-col items-center relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-sm">$11</span>
+                <div class="w-full h-32 bg-stone-200 rounded-2xl mb-4"></div>
+                <h3 class="font-bold text-sm text-center text-stone-900">BAKED MAC</h3>
+                <p class="text-[11px] text-stone-500 text-center mt-1 leading-tight">Delicious item description text here...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN INTERMEDIA: INFO Y TARJETAS OSCURAS -->
+    <section class="max-w-6xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            
+            <!-- Columna 1: Imagen Secundaria o Cuadrada -->
+            <div class="md:col-span-1 relative bg-stone-900 rounded-[2.5rem] overflow-hidden shadow-xl h-96 flex items-center justify-center border-4 border-white">
+                <span class="text-stone-400 font-medium">[ Imagen Circular / Plato ]</span>
+            </div>
+
+            <!-- Columna 2 y 3: Tarjetas Oscuras de Beneficios -->
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Card Oscura 1 -->
+                <div class="bg-stone-900 text-white p-8 rounded-[2.5rem] flex flex-col justify-between shadow-xl min-h-[260px]">
+                    <div>
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center font-bold mb-4 text-xl shadow-md">★</div>
+                        <h3 class="text-xl font-black uppercase mb-2 leading-tight">Award-Winning Pizza & Service</h3>
+                        <p class="text-stone-400 text-xs leading-relaxed">Experience the absolute best flavors crafted with passion and top-tier ingredients.</p>
+                    </div>
+                    <button class="mt-6 bg-orange-500 text-white font-bold px-6 py-2.5 rounded-full w-fit hover:bg-orange-600 transition text-xs tracking-wider">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Card Oscura 2 -->
+                <div class="bg-stone-900 text-white p-8 rounded-[2.5rem] flex flex-col justify-between shadow-xl min-h-[260px]">
+                    <div>
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center font-bold mb-4 text-xl shadow-md">%</div>
+                        <h3 class="text-xl font-black uppercase mb-2 leading-tight">Kids Eat Free Tuesdays!</h3>
+                        <p class="text-stone-400 text-xs leading-relaxed">Your treat on us! Enjoy family time with awesome discounts every single week.</p>
+                    </div>
+                    <button class="mt-6 bg-orange-500 text-white font-bold px-6 py-2.5 rounded-full w-fit hover:bg-orange-600 transition text-xs tracking-wider">
+                        View Menu Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. POR QUÉ ELEGIRNOS Y COLLAGE DE FOTOS -->
+    <section class="max-w-6xl mx-auto px-6 py-12 bg-white rounded-[3rem] shadow-xs my-8 border border-stone-100">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="space-y-4">
+                <h3 class="text-2xl font-black uppercase tracking-wide text-stone-900">Why Choose Us</h3>
+                <p class="text-stone-600 text-sm leading-relaxed">
+                    Fresh ingredients, local community support, and a tradition of flavor that keeps our customers coming back every single week. Join our family today and taste the difference.
+                </p>
+                <div class="flex gap-3 pt-2">
+                    <span class="bg-orange-100 text-orange-800 font-bold text-xs px-4 py-2 rounded-full">100% Natural</span>
+                    <span class="bg-orange-100 text-orange-800 font-bold text-xs px-4 py-2 rounded-full">Artisanal</span>
+                </div>
+            </div>
+            
+            <!-- Grid de 6 fotos pequeñas (Collage simétrico) -->
+            <div class="grid grid-cols-3 gap-3">
+                <div class="h-24 bg-stone-200 rounded-2xl shadow-xs"></div>
+                <div class="h-24 bg-stone-300 rounded-2xl shadow-xs"></div>
+                <div class="h-24 bg-stone-200 rounded-2xl shadow-xs"></div>
+                <div class="h-24 bg-stone-300 rounded-2xl shadow-xs"></div>
+                <div class="h-24 bg-stone-200 rounded-2xl shadow-xs"></div>
+                <div class="h-24 bg-stone-300 rounded-2xl shadow-xs"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER COMPLETO DE CIERRE -->
+    <footer class="bg-stone-900 text-white px-8 py-14 mt-16">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 pb-10 border-b border-stone-800">
+            <div class="space-y-3">
+                <div class="font-black text-xl tracking-wider text-orange-500">CRUST CO.</div>
+                <p class="text-stone-400 text-xs leading-relaxed">Want to place an order now? Get in touch with us through our official channels.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-xs mb-4 uppercase tracking-wider text-orange-500">Navigation</h4>
+                <ul class="space-y-2 text-xs text-stone-400 font-medium">
+                    <li><a href="#" class="hover:text-white transition">Menu</a></li>
+                    <li><a href="#" class="hover:text-white transition">Catering</a></li>
+                    <li><a href="#" class="hover:text-white transition">Locations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-xs mb-4 uppercase tracking-wider text-orange-500">Legal</h4>
+                <ul class="space-y-2 text-xs text-stone-400 font-medium">
+                    <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition">Commissions</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="font-bold text-xs mb-4 uppercase tracking-wider text-orange-500">Newsletter</h4>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="Your email" class="bg-stone-800 px-3 py-2.5 rounded-xl text-xs text-white outline-none w-full border border-stone-700">
+                    <button class="bg-orange-500 px-5 py-2.5 rounded-xl text-xs font-bold hover:bg-orange-600 transition shadow-sm">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-8 text-center text-xs text-stone-500 font-medium">
+            &copy; 2026 Crust Pizza Co. All Rights Reserved. Pixel Perfect Exam Kit.
+        </div>
+    </footer>
+
+</body>
+</html>
