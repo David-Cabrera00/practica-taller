@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Pixel Perfect - Catálogo Masivo de Cards</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F8FAFC] text-slate-900 font-sans antialiased">
+
+    <!-- 1. NAVBAR SUPERIOR EXTENDIDO -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-8">
+                <div class="font-black text-lg tracking-tighter text-indigo-600">MEGASTORE</div>
+                <div class="hidden md:flex items-center bg-slate-100 border border-slate-200 rounded-full px-4 py-1.5 w-80">
+                    <span class="text-slate-400 text-xs mr-2">🔍</span>
+                    <input type="text" placeholder="Search thousands of products..." class="bg-transparent text-xs outline-none w-full text-slate-800 placeholder-slate-400">
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-xs font-bold text-slate-700 hover:text-indigo-600 hidden sm:inline">Wishlist (0)</a>
+                <button class="bg-indigo-600 text-white px-6 py-2.5 rounded-full font-bold text-xs shadow-md hover:bg-indigo-700 transition">
+                    CART ($0.00)
+                </button>
+            </div>
+        </div>
+        <!-- Sub-navegación de categorías -->
+        <nav class="max-w-7xl mx-auto hidden md:flex gap-8 text-xs font-bold text-slate-600 px-6 pb-3 pt-1 border-t border-slate-100">
+            <a href="#" class="hover:text-indigo-600">All Departments</a>
+            <a href="#" class="hover:text-indigo-600">Electronics</a>
+            <a href="#" class="hover:text-indigo-600">Home & Kitchen</a>
+            <a href="#" class="hover:text-indigo-600">Fashion</a>
+            <a href="#" class="hover:text-indigo-600">Sports & Outdoors</a>
+            <a href="#" class="hover:text-indigo-600">Deals & Offers</a>
+        </nav>
+    </header>
+
+    <!-- 2. HERO PRINCIPAL -->
+    <section class="max-w-7xl mx-auto px-6 py-8">
+        <div class="bg-gradient-to-r from-indigo-900 to-indigo-700 rounded-[2.5rem] p-8 md:p-12 text-white relative overflow-hidden shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4">
+                <span class="bg-white/20 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mega Seasonal Sale</span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight leading-tight">
+                    Up to 50% Off Top Brands
+                </h1>
+                <p class="text-indigo-100 text-xs md:text-sm">
+                    Discover incredible discounts across all categories with fast free shipping worldwide.
+                </p>
+                <button class="bg-white text-indigo-900 font-bold px-7 py-3 rounded-full text-xs shadow-lg hover:bg-indigo-50 transition">
+                    Shop Deals Now
+                </button>
+            </div>
+            <div class="h-64 bg-black/20 rounded-3xl border border-white/10 flex items-center justify-center text-indigo-200 text-xs font-mono">
+                [ Banner Promocional Masivo ]
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. GRILLA MASIVA DE PRODUCTOS (8 CARDS - 2 FILAS DE 4) -->
+    <section class="max-w-7xl mx-auto px-6 py-8">
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h2 class="text-xl font-black uppercase tracking-wide text-slate-900">Trending Products</h2>
+                <p class="text-xs text-slate-500 mt-0.5">Based on customer ratings and daily search volume.</p>
+            </div>
+            <span class="text-xs font-bold text-indigo-600 hover:underline cursor-pointer">VIEW ALL (120+)</span>
+        </div>
+        
+        <!-- Grid de 8 tarjetas exactas -->
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            
+            <!-- Card 1 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-4 right-4 bg-rose-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">-20%</span>
+                <div class="w-full h-32 bg-slate-100 rounded-2xl mb-3"></div>
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">Electronics</span>
+                    <h3 class="font-bold text-xs text-slate-900 mt-0.5">Wireless Noise Cancelling Earbuds</h3>
+                    <div class="flex items-center gap-1 my-1">
+                        <span class="text-amber-400 text-[10px]">★★★★★</span>
+                        <span class="text-[9px] text-slate-400">(240)</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="font-black text-indigo-600 text-xs">$79.99</span>
+                        <button class="bg-indigo-600 text-white px-3 py-1 rounded-xl text-[10px] font-bold hover:bg-indigo-700">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-4 right-4 bg-indigo-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">New</span>
+                <div class="w-full h-32 bg-slate-100 rounded-2xl mb-3"></div>
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">Home</span>
+                    <h3 class="font-bold text-xs text-slate-900 mt-0.5">Smart LED Coffee Maker Pro</h3>
+                    <div class="flex items-center gap-1 my-1">
+                        <span class="text-amber-400 text-[10px]">★★★★☆</span>
+                        <span class="text-[9px] text-slate-400">(85)</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="font-black text-indigo-600 text-xs">$129.00</span>
+                        <button class="bg-indigo-600 text-white px-3 py-1 rounded-xl text-[10px] font-bold hover:bg-indigo-700">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-4 right-4 bg-rose-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">-15%</span>
+                <div class="w-full h-32 bg-slate-100 rounded-2xl mb-3"></div>
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">Fitness</span>
+                    <h3 class="font-bold text-xs text-slate-900 mt-0.5">Ergonomic Resistance Bands Kit</h3>
+                    <div class="flex items-center gap-1 my-1">
+                        <span class="text-amber-400 text-[10px]">★★★★★</span>
+                        <span class="text-[9px] text-slate-400">(512)</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="font-black text-indigo-600 text-xs">$34.50</span>
+                        <button class="bg-indigo-600 text-white px-3 py-1 rounded-xl text-[10px] font-bold hover:bg-indigo-700">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-4 right-4 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">Sale</span>
+                <div class="w-full h-32 bg-slate-100 rounded-2xl mb-3"></div>
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">Kitchen</span>
+                    <h3 class="font-bold text-xs text-slate-900 mt-0.5">Stainless Steel Chef Knife</h3>
+                    <div class="flex items-center gap-1 my-1">
+                        <span class="text-amber-400 text-[10px]">★★★★★</span>
+                        <span class="text-[9px] text-slate-400">(1,140)</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="font-black text-indigo-600 text-xs">$45.99</span>
+                        <button class="bg-indigo-600 text-white px-3 py-1 rounded-xl text-[10px] font-bold hover:bg-indigo-700">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-4 right-4 bg-indigo-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">Hot</span>
+                <div class="w-full h-32 bg-slate-100 rounded-2xl mb-3"></div>
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">Gaming</span>
+                    <h3 class="font-bold text-xs text-slate-900 mt-0.5">RGB Mechanical Gaming Keyboard</h3>
+                    <div class="flex items-center gap-1 my-1">
+                        <span class="text-amber-400 text-[10px]">★★★★☆</span>
+                        <span class="text-[9px] text-slate-400">(320)</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="font-black text-indigo-600 text-xs">$89.00</span>
+                        <button class="bg-indigo-600 text-white px-3 py-1 rounded-xl text-[10px] font-bold hover:bg-indigo-700">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-4 right-4 bg-rose-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">-30%</span>
+                <div class="w-full h-32 bg-slate-100 rounded-2xl mb-3"></div>
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">Audio</span>
+                    <h3 class="font-bold text-xs text-slate-900 mt-0.5">Portable Waterproof Bluetooth Speaker</h3>
+                    <div class="flex items-center gap-1 my-1">
+                        <span class="text-amber-400 text-[10px]">★★★★★</span>
+                        <span class="text-[9px] text-slate-400">(890)</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="font-black text-indigo-600 text-xs">$59.99</span>
+                        <button class="bg-indigo-600 text-white px-3 py-1 rounded-xl text-[10px] font-bold hover:bg-indigo-700">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-4 right-4 bg-indigo-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">New</span>
+                <div class="w-full h-32 bg-slate-100 rounded-2xl mb-3"></div>
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">Office</span>
+                    <h3 class="font-bold text-xs text-slate-900 mt-0.5">Minimalist Desk LED Lamp</h3>
+                    <div class="flex items-center gap-1 my-1">
+                        <span class="text-amber-400 text-[10px]">★★★★★</span>
+                        <span class="text-[9px] text-slate-400">(150)</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="font-black text-indigo-600 text-xs">$28.99</span>
+                        <button class="bg-indigo-600 text-white px-3 py-1 rounded-xl text-[10px] font-bold hover:bg-indigo-700">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-4 right-4 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">Top</span>
+                <div class="w-full h-32 bg-slate-100 rounded-2xl mb-3"></div>
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">Travel</span>
+                    <h3 class="font-bold text-xs text-slate-900 mt-0.5">Anti-Theft Smart Travel Backpack</h3>
+                    <div class="flex items-center gap-1 my-1">
+                        <span class="text-amber-400 text-[10px]">★★★★★</span>
+                        <span class="text-[9px] text-slate-400">(670)</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="font-black text-indigo-600 text-xs">$74.50</span>
+                        <button class="bg-indigo-600 text-white px-3 py-1 rounded-xl text-[10px] font-bold hover:bg-indigo-700">Add</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. FOOTER EXTENDIDO -->
+    <footer class="bg-slate-900 text-white px-8 py-14 mt-16 text-xs">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-800">
+            <div>
+                <div class="font-black text-sm text-indigo-400 mb-3">MEGASTORE</div>
+                <p class="text-[11px] text-slate-400">Your number one destination for quality products and daily deals.</p>
+            </div>
+            <div>
+                <h5 class="font-bold text-white mb-3 uppercase tracking-wider">Customer Service</h5>
+                <ul class="space-y-1.5 text-slate-400">
+                    <li><a href="#" class="hover:text-white">Help Center</a></li>
+                    <li><a href="#" class="hover:text-white">Returns & Exchanges</a></li>
+                    <li><a href="#" class="hover:text-white">Shipping Info</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-white mb-3 uppercase tracking-wider">Company</h5>
+                <ul class="space-y-1.5 text-slate-400">
+                    <li><a href="#" class="hover:text-white">About Us</a></li>
+                    <li><a href="#" class="hover:text-white">Careers</a></li>
+                    <li><a href="#" class="hover:text-white">Press Releases</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-white mb-3 uppercase tracking-wider">Newsletter</h5>
+                <p class="text-[11px] text-slate-400 mb-2">Get exclusive offers in your inbox.</p>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="Your email" class="bg-slate-800 px-3 py-2 rounded-xl text-xs outline-none w-full border border-slate-700 text-white">
+                    <button class="bg-indigo-600 px-4 py-2 rounded-xl font-bold hover:bg-indigo-700">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-6 text-center text-xs text-slate-500">
+            &copy; 2026 Megastore Inc. All Rights Reserved. Pixel Perfect Master Template.
+        </div>
+    </footer>
+
+</body>
+</html>
