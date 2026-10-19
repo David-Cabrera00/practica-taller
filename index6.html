@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Pixel Perfect - Academia Online (EdTech)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F8FAFC] text-slate-900 font-sans antialiased">
+
+    <!-- 1. NAVBAR SUPERIOR EXTENDIDO -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-2 font-black text-lg tracking-tighter text-blue-600">
+                    <span class="w-7 h-7 bg-blue-600 text-white rounded-lg flex items-center justify-center text-xs">A</span>
+                    ACADEMY X
+                </div>
+                <div class="hidden md:flex items-center bg-slate-100 border border-slate-200 rounded-full px-4 py-1.5 w-72">
+                    <span class="text-slate-400 text-xs mr-2">🔍</span>
+                    <input type="text" placeholder="Search skills, courses, experts..." class="bg-transparent text-xs outline-none w-full text-slate-800 placeholder-slate-400">
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-xs font-bold text-slate-700 hover:text-blue-600 hidden sm:inline">Teach on Academy</a>
+                <button class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold text-xs shadow-md hover:bg-blue-700 transition">
+                    JOIN FREE
+                </button>
+            </div>
+        </div>
+        <!-- Sub-navegación de categorías de cursos -->
+        <nav class="max-w-7xl mx-auto hidden md:flex gap-8 text-xs font-bold text-slate-600 px-6 pb-3 pt-1 border-t border-slate-100">
+            <a href="#" class="hover:text-blue-600">Software Engineering</a>
+            <a href="#" class="hover:text-blue-600">Data Science</a>
+            <a href="#" class="hover:text-blue-600">Cybersecurity</a>
+            <a href="#" class="hover:text-blue-600">Artificial Intelligence</a>
+            <a href="#" class="hover:text-blue-600">Cloud Architecture</a>
+            <a href="#" class="hover:text-blue-600">UI/UX Design</a>
+        </nav>
+    </header>
+
+    <!-- 2. HERO PRINCIPAL -->
+    <section class="max-w-7xl mx-auto px-6 py-8">
+        <div class="bg-gradient-to-r from-blue-900 to-indigo-800 rounded-[2.5rem] p-8 md:p-12 text-white relative overflow-hidden shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4">
+                <span class="bg-blue-500/30 text-blue-200 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest border border-blue-400/30">New Cohorts 2026</span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight leading-tight">
+                    Accelerate Your Tech Career Today
+                </h1>
+                <p class="text-blue-100 text-xs md:text-sm">
+                    Learn by building real-world software applications mentored by senior industry engineers.
+                </p>
+                <button class="bg-white text-blue-900 font-bold px-7 py-3 rounded-full text-xs shadow-lg hover:bg-blue-50 transition">
+                    Explore All Courses
+                </button>
+            </div>
+            <div class="h-64 bg-black/20 rounded-3xl border border-white/10 flex items-center justify-center text-blue-200 text-xs font-mono">
+                [ Banner Interactivo / Estadísticas ]
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. GRILLA MASIVA DE CURSOS (6 CARDS - 2 FILAS DE 3) -->
+    <section class="max-w-7xl mx-auto px-6 py-8">
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h2 class="text-xl font-black uppercase tracking-wide text-slate-900">Featured Bootcamps</h2>
+                <p class="text-xs text-slate-500 mt-0.5">Hand-crafted curriculums with guaranteed project portfolios.</p>
+            </div>
+            <span class="text-xs font-bold text-blue-600 hover:underline cursor-pointer">VIEW ALL (45+)</span>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            
+            <!-- Card 1 -->
+            <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-full h-36 bg-blue-50 rounded-2xl mb-4 relative flex items-center justify-center text-blue-600 font-bold text-xs">
+                        Java & Spring Boot
+                        <span class="absolute top-3 right-3 bg-blue-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">Advanced</span>
+                    </div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Backend Engineering</span>
+                    <h3 class="font-bold text-sm text-slate-900 mt-1">Enterprise Microservices Architecture</h3>
+                    <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Build scalable REST APIs, security layers, and database clusters.</p>
+                </div>
+                <div class="pt-4 mt-4 border-t border-slate-100 flex justify-between items-center">
+                    <span class="font-black text-slate-900 text-sm">$490</span>
+                    <span class="text-xs font-bold text-blue-600 cursor-pointer hover:underline">Enroll Now →</span>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-full h-36 bg-indigo-50 rounded-2xl mb-4 relative flex items-center justify-center text-indigo-600 font-bold text-xs">
+                        React & Next.js
+                        <span class="absolute top-3 right-3 bg-indigo-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">Popular</span>
+                    </div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Frontend Development</span>
+                    <h3 class="font-bold text-sm text-slate-900 mt-1">Modern Web Applications with Next.js</h3>
+                    <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Master server components, routing, and Tailwind CSS styling.</p>
+                </div>
+                <div class="pt-4 mt-4 border-t border-slate-100 flex justify-between items-center">
+                    <span class="font-black text-slate-900 text-sm">$450</span>
+                    <span class="text-xs font-bold text-blue-600 cursor-pointer hover:underline">Enroll Now →</span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-full h-36 bg-emerald-50 rounded-2xl mb-4 relative flex items-center justify-center text-emerald-600 font-bold text-xs">
+                        Cybersecurity
+                        <span class="absolute top-3 right-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">Specialization</span>
+                    </div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Security & Defense</span>
+                    <h3 class="font-bold text-sm text-slate-900 mt-1">Ethical Hacking & Penetration Testing</h3>
+                    <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Learn vulnerability assessment, network protocols, and defense strategies.</p>
+                </div>
+                <div class="pt-4 mt-4 border-t border-slate-100 flex justify-between items-center">
+                    <span class="font-black text-slate-900 text-sm">$520</span>
+                    <span class="text-xs font-bold text-blue-600 cursor-pointer hover:underline">Enroll Now →</span>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-full h-36 bg-amber-50 rounded-2xl mb-4 relative flex items-center justify-center text-amber-600 font-bold text-xs">
+                        Data Science
+                        <span class="absolute top-3 right-3 bg-amber-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">Intermediate</span>
+                    </div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Analytics & AI</span>
+                    <h3 class="font-bold text-sm text-slate-900 mt-1">Python for Data Analysis & Machine Learning</h3>
+                    <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Process datasets, build predictive models, and visualize complex metrics.</p>
+                </div>
+                <div class="pt-4 mt-4 border-t border-slate-100 flex justify-between items-center">
+                    <span class="font-black text-slate-900 text-sm">$480</span>
+                    <span class="text-xs font-bold text-blue-600 cursor-pointer hover:underline">Enroll Now →</span>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-full h-36 bg-purple-50 rounded-2xl mb-4 relative flex items-center justify-center text-purple-600 font-bold text-xs">
+                        DevOps & Cloud
+                        <span class="absolute top-3 right-3 bg-purple-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">Advanced</span>
+                    </div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Infrastructure</span>
+                    <h3 class="font-bold text-sm text-slate-900 mt-1">Docker, Kubernetes & CI/CD Pipelines</h3>
+                    <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Automate cloud deployments, container orchestration, and server scaling.</p>
+                </div>
+                <div class="pt-4 mt-4 border-t border-slate-100 flex justify-between items-center">
+                    <span class="font-black text-slate-900 text-sm">$510</span>
+                    <span class="text-xs font-bold text-blue-600 cursor-pointer hover:underline">Enroll Now →</span>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-full h-36 bg-rose-50 rounded-2xl mb-4 relative flex items-center justify-center text-rose-600 font-bold text-xs">
+                        UI/UX Design
+                        <span class="absolute top-3 right-3 bg-rose-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">Beginner</span>
+                    </div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Product Design</span>
+                    <h3 class="font-bold text-sm text-slate-900 mt-1">User Experience Principles & Figma Mastery</h3>
+                    <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Design intuitive digital interfaces, wireframes, and interactive prototypes.</p>
+                </div>
+                <div class="pt-4 mt-4 border-t border-slate-100 flex justify-between items-center">
+                    <span class="font-black text-slate-900 text-sm">$390</span>
+                    <span class="text-xs font-bold text-blue-600 cursor-pointer hover:underline">Enroll Now →</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. FOOTER EXTENDIDO -->
+    <footer class="bg-slate-900 text-white px-8 py-14 mt-16 text-xs">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-800">
+            <div>
+                <div class="font-black text-sm text-blue-400 mb-3">ACADEMY X</div>
+                <p class="text-[11px] text-slate-400">Empowering the next generation of software engineers worldwide with world-class education.</p>
+            </div>
+            <div>
+                <h5 class="font-bold text-white mb-3 uppercase tracking-wider">Programs</h5>
+                <ul class="space-y-1.5 text-slate-400">
+                    <li><a href="#" class="hover:text-white">Software Engineering</a></li>
+                    <li><a href="#" class="hover:text-white">Data Science</a></li>
+                    <li><a href="#" class="hover:text-white">Cybersecurity</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-white mb-3 uppercase tracking-wider">Resources</h5>
+                <ul class="space-y-1.5 text-slate-400">
+                    <li><a href="#" class="hover:text-white">Student Portal</a></li>
+                    <li><a href="#" class="hover:text-white">Career Services</a></li>
+                    <li><a href="#" class="hover:text-white">Community Forum</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-white mb-3 uppercase tracking-wider">Newsletter</h5>
+                <p class="text-[11px] text-slate-400 mb-2">Subscribe to get weekly coding tips and resources.</p>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="Your email address" class="bg-slate-800 px-3 py-2 rounded-xl text-xs outline-none w-full border border-slate-700 text-white">
+                    <button class="bg-blue-600 px-4 py-2 rounded-xl font-bold hover:bg-blue-700">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-6 text-center text-xs text-slate-500">
+            &copy; 2026 Academy X Inc. All Rights Reserved. Pixel Perfect Master Template.
+        </div>
+    </footer>
+
+</body>
+</html>
