@@ -1,0 +1,62 @@
+<!-- =================================================================
+     VARIANTE A: NAVBAR DE 2 NIVELES CON BUSCADOR Y CATEGORÍAS
+     (Estilo Pastelería / E-commerce denso)
+     ================================================================= -->
+<header class="bg-white border-b border-stone-200 px-6 py-4 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="text-2xl font-black text-rose-700 tracking-tight">BRAND LOGO</div>
+        
+        <!-- Buscador Central con Icono -->
+        <div class="hidden md:flex items-center bg-stone-100 border border-stone-200 rounded-full px-4 py-1.5 w-72">
+            <span class="text-stone-400 text-xs mr-2">🔍</span>
+            <input type="text" placeholder="Search..." class="bg-transparent text-xs outline-none w-full text-stone-800 placeholder-stone-400">
+        </div>
+
+        <!-- Acciones Derecha -->
+        <div class="flex items-center gap-4">
+            <a href="#" class="text-xs font-bold text-stone-700 hover:text-rose-700 hidden lg:inline">Login / Register</a>
+            <button class="bg-rose-700 text-white px-5 py-2 rounded-full font-bold text-xs tracking-wider shadow-md hover:bg-rose-800 transition">
+                ORDER NOW
+            </button>
+        </div>
+    </div>
+
+    <!-- Segundo Nivel: Submenú de Enlaces Horizontales -->
+    <nav class="max-w-6xl mx-auto hidden md:flex justify-center gap-8 text-xs font-bold text-stone-600 pt-3 border-t border-stone-100 mt-3">
+        <a href="#" class="hover:text-rose-700 transition">Category 1</a>
+        <a href="#" class="hover:text-rose-700 transition">Category 2</a>
+        <a href="#" class="hover:text-rose-700 transition">Category 3</a>
+        <a href="#" class="hover:text-rose-700 transition">Category 4</a>
+        <a href="#" class="hover:text-rose-700 transition">Category 5</a>
+        <a href="#" class="hover:text-rose-700 transition">Special Deals</a>
+    </nav>
+</header>
+
+
+<!-- =================================================================
+     VARIANTE B: NAVBAR CLÁSICO LIMPIO CON LOGO CIRCULAR
+     (Estilo Restaurante / Landing Tradicional)
+     ================================================================= -->
+<header class="flex justify-between items-center px-8 py-4 bg-white border-b border-stone-200 sticky top-0 z-50 shadow-xs">
+    <div class="flex items-center gap-6">
+        <!-- Logo Circular -->
+        <div class="w-10 h-10 bg-stone-900 text-white rounded-full flex items-center justify-center font-black text-xs">
+            LOGO
+        </div>
+        <!-- Enlaces Principales -->
+        <nav class="hidden md:flex gap-6 text-xs font-black text-stone-800 tracking-wider">
+            <a href="#" class="hover:text-orange-600 transition">HOME</a>
+            <a href="#" class="hover:text-orange-600 transition">MENU</a>
+            <a href="#" class="hover:text-orange-600 transition">SERVICES</a>
+            <a href="#" class="hover:text-orange-600 transition">ABOUT</a>
+        </nav>
+    </div>
+    <!-- Botón CTA -->
+    <div class="flex items-center gap-4">
+        <span class="text-xs font-bold text-stone-600 hidden lg:inline">📍 Pasto, Col</span>
+        <button class="bg-orange-600 text-white px-6 py-2.5 rounded-full font-bold text-xs tracking-wider shadow-md hover:bg-orange-700 transition">
+            CALL NOW
+        </button>
+    </div>
+</header>

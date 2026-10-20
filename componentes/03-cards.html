@@ -1,0 +1,138 @@
+<!-- =================================================================
+     VARIANTE A: GRILLA DE 4 PRODUCTOS CON CORAZÓN, ESTRELLAS Y BOTÓN (+)
+     (Estilo Pastelería / Tienda Online)
+     ================================================================= -->
+<section class="max-w-6xl mx-auto px-4 py-8">
+    <div class="flex justify-between items-center mb-6">
+        <div>
+            <h3 class="text-lg font-black text-stone-900 uppercase tracking-wide">Bestsellers</h3>
+            <p class="text-xs text-stone-500">Los artículos más pedidos por los clientes</p>
+        </div>
+        <span class="text-xs font-bold text-rose-700 hover:underline cursor-pointer">VER TODOS</span>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Tarjeta individual (Duplicar según sea necesario) -->
+        <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-100 flex flex-col justify-between relative group hover:shadow-md transition">
+            <!-- Insignia / Corazón flotante -->
+            <span class="absolute top-4 left-4 text-rose-500 text-xs">❤️</span>
+            <span class="absolute top-4 right-4 bg-rose-100 text-rose-700 text-[10px] font-bold px-2 py-0.5 rounded-full">Top</span>
+            
+            <!-- Imagen del producto -->
+            <div class="w-full h-32 bg-stone-100 rounded-2xl mb-3 flex items-center justify-center text-stone-400 text-xs">
+                [ Foto ]
+            </div>
+            
+            <!-- Información -->
+            <div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-1">Nombre del Producto Destacado</h4>
+                <!-- Estrellas de valoración -->
+                <div class="flex items-center gap-1 my-1">
+                    <span class="text-amber-400 text-[10px]">★★★★★</span>
+                    <span class="text-[9px] text-stone-400">(450)</span>
+                </div>
+                <!-- Precio y Botón de Acción -->
+                <div class="flex justify-between items-center mt-3 pt-2 border-t border-stone-50">
+                    <span class="font-black text-stone-900 text-sm">$15.00</span>
+                    <button class="w-7 h-7 bg-rose-700 text-white rounded-full flex items-center justify-center text-xs font-bold shadow-sm hover:bg-rose-800 transition">
+                        +
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-100 flex flex-col justify-between relative group hover:shadow-md transition">
+            <span class="absolute top-4 left-4 text-rose-500 text-xs">❤️</span>
+            <div class="w-full h-32 bg-stone-100 rounded-2xl mb-3 flex items-center justify-center text-stone-400 text-xs">[ Foto ]</div>
+            <div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-1">Producto Secundario Especial</h4>
+                <div class="flex items-center gap-1 my-1">
+                    <span class="text-amber-400 text-[10px]">★★★★★</span>
+                    <span class="text-[9px] text-stone-400">(320)</span>
+                </div>
+                <div class="flex justify-between items-center mt-3 pt-2 border-t border-stone-50">
+                    <span class="font-black text-stone-900 text-sm">$18.50</span>
+                    <button class="w-7 h-7 bg-rose-700 text-white rounded-full flex items-center justify-center text-xs font-bold shadow-sm hover:bg-rose-800 transition">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-100 flex flex-col justify-between relative group hover:shadow-md transition">
+            <span class="absolute top-4 left-4 text-rose-500 text-xs">❤️</span>
+            <div class="w-full h-32 bg-stone-100 rounded-2xl mb-3 flex items-center justify-center text-stone-400 text-xs">[ Foto ]</div>
+            <div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-1">Edición Limitada Temporada</h4>
+                <div class="flex items-center gap-1 my-1">
+                    <span class="text-amber-400 text-[10px]">★★★★☆</span>
+                    <span class="text-[9px] text-stone-400">(180)</span>
+                </div>
+                <div class="flex justify-between items-center mt-3 pt-2 border-t border-stone-50">
+                    <span class="font-black text-stone-900 text-sm">$12.00</span>
+                    <button class="w-7 h-7 bg-rose-700 text-white rounded-full flex items-center justify-center text-xs font-bold shadow-sm hover:bg-rose-800 transition">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-100 flex flex-col justify-between relative group hover:shadow-md transition">
+            <span class="absolute top-4 left-4 text-rose-500 text-xs">❤️</span>
+            <div class="w-full h-32 bg-stone-100 rounded-2xl mb-3 flex items-center justify-center text-stone-400 text-xs">[ Foto ]</div>
+            <div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-1">Selección Clásica Casera</h4>
+                <div class="flex items-center gap-1 my-1">
+                    <span class="text-amber-400 text-[10px]">★★★★★</span>
+                    <span class="text-[9px] text-stone-400">(510)</span>
+                </div>
+                <div class="flex justify-between items-center mt-3 pt-2 border-t border-stone-50">
+                    <span class="font-black text-stone-900 text-sm">$22.00</span>
+                    <button class="w-7 h-7 bg-rose-700 text-white rounded-full flex items-center justify-center text-xs font-bold shadow-sm hover:bg-rose-800 transition">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =================================================================
+     VARIANTE B: TARJETAS DE MENÚ CON PRECIO CIRCULAR SUPERPUESTO
+     (Estilo Pizzería / Restaurante)
+     ================================================================= -->
+<section class="max-w-6xl mx-auto px-6 py-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Card Individual -->
+        <div class="bg-white p-3 rounded-3xl shadow-sm border border-stone-100 flex flex-col items-center relative">
+            <span class="absolute top-4 right-4 bg-orange-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-xs">$14</span>
+            <div class="w-full h-24 bg-stone-200 rounded-2xl mb-3"></div>
+            <h3 class="font-bold text-xs text-stone-900 text-center uppercase tracking-wide">Plato Especial</h3>
+            <p class="text-[10px] text-stone-500 text-center mt-1 leading-tight">Descripción breve de ingredientes o detalles del plato.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- =================================================================
+     VARIANTE C: BOTONES / PESTAÑAS DE CATEGORÍAS (TABS)
+     (Estilo Selector Rápido 4 Columnas)
+     ================================================================= -->
+<section class="max-w-6xl mx-auto px-4 py-4">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="bg-white p-4 rounded-2xl shadow-xs border border-stone-100 flex flex-col items-center justify-center hover:shadow-md transition cursor-pointer">
+            <div class="w-10 h-10 bg-stone-50 rounded-full mb-2 flex items-center justify-center text-xs">🍰</div>
+            <span class="text-xs font-bold text-stone-900 tracking-wider">OPCIÓN 1</span>
+        </div>
+        <div class="bg-white p-4 rounded-2xl shadow-xs border border-stone-100 flex flex-col items-center justify-center hover:shadow-md transition cursor-pointer">
+            <div class="w-10 h-10 bg-stone-50 rounded-full mb-2 flex items-center justify-center text-xs">👑</div>
+            <span class="text-xs font-bold text-stone-900 tracking-wider">OPCIÓN 2</span>
+        </div>
+        <div class="bg-white p-4 rounded-2xl shadow-xs border border-stone-100 flex flex-col items-center justify-center hover:shadow-md transition cursor-pointer">
+            <div class="w-10 h-10 bg-stone-50 rounded-full mb-2 flex items-center justify-center text-xs">☕</div>
+            <span class="text-xs font-bold text-stone-900 tracking-wider">OPCIÓN 3</span>
+        </div>
+        <div class="bg-white p-4 rounded-2xl shadow-xs border border-stone-100 flex flex-col items-center justify-center hover:shadow-md transition cursor-pointer">
+            <div class="w-10 h-10 bg-stone-50 rounded-full mb-2 flex items-center justify-center text-xs">🍪</div>
+            <span class="text-xs font-bold text-stone-900 tracking-wider">OPCIÓN 4</span>
+        </div>
+    </div>
+</section>
