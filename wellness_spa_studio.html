@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Wellness & Spa Studio - Examen Pixel Perfect</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#F6F7F4] text-stone-800 antialiased selection:bg-emerald-200">
+
+    <!-- 1. HEADER / NAVEGACIÓN SUPERIOR STICKY -->
+    <header class="flex justify-between items-center px-8 py-4 bg-white/80 backdrop-blur-md border-b border-stone-200/60 sticky top-0 z-50 transition-all shadow-2xs">
+        <div class="flex items-center gap-8">
+            <div class="flex items-center gap-2.5">
+                <div class="w-10 h-10 bg-[#3B5345] text-white rounded-2xl flex items-center justify-center font-black text-xs tracking-widest shadow-sm">AURA</div>
+                <span class="font-extrabold text-sm tracking-widest uppercase text-[#3B5345]">Wellness & Spa</span>
+            </div>
+            <nav class="hidden md:flex gap-7 text-xs font-bold text-stone-600 tracking-wider">
+                <a href="#services" class="hover:text-[#3B5345] transition">SERVICES</a>
+                <a href="#rituals" class="hover:text-[#3B5345] transition">RITUALS</a>
+                <a href="#sanctuary" class="hover:text-[#3B5345] transition">SANCTUARY</a>
+                <a href="#membership" class="hover:text-[#3B5345] transition">MEMBERSHIP</a>
+            </nav>
+        </div>
+        <div class="flex items-center gap-4">
+            <span class="text-xs font-semibold text-stone-500 hidden lg:inline">🌿 Open Daily 8am - 9pm</span>
+            <button class="bg-[#3B5345] text-white px-6 py-2.5 rounded-full font-bold text-xs tracking-wider shadow-md hover:bg-[#2C3F34] transition">
+                BOOK SESSION
+            </button>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION MASIVO CON ESTADÍSTICAS Y OFERTA -->
+    <section class="max-w-7xl mx-auto px-6 py-12 md:py-16 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+        <div class="md:col-span-7 space-y-6">
+            <span class="bg-[#E4ECE7] text-[#3B5345] text-[11px] font-extrabold px-4 py-1.5 rounded-full uppercase tracking-widest border border-[#D1E0D8]">
+                ✨ Summer Renewal Program • Save 25%
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tight leading-[1.08] text-stone-900">
+                Restore Your Mind, Body & Soul.
+            </h1>
+            <p class="text-stone-600 text-sm md:text-base leading-relaxed max-w-xl">
+                Immerse yourself in deeply restorative organic rituals, therapeutic massages, and holistic wellness therapies designed to reset your nervous system.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <button class="bg-[#3B5345] text-white font-bold px-8 py-3.5 rounded-full shadow-lg hover:bg-[#2C3F34] transition text-xs tracking-wider">
+                    Reserve Experience
+                </button>
+                <button class="bg-white border border-stone-300 text-stone-700 font-bold px-8 py-3.5 rounded-full hover:bg-stone-50 transition text-xs tracking-wider">
+                    Explore Menu
+                </button>
+            </div>
+        </div>
+        
+        <!-- Tarjeta Visual Hero con Imagen Automática e Indicadores -->
+        <div class="md:col-span-5 relative bg-[#3B5345] rounded-[2.5rem] p-6 shadow-2xl overflow-hidden min-h-[380px] flex flex-col justify-between border-4 border-white">
+            <div class="absolute inset-0 opacity-40 mix-blend-overlay">
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Spa Background" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute top-0 right-0 w-48 h-48 bg-emerald-400/20 rounded-full blur-3xl"></div>
+            
+            <div class="flex justify-between items-center relative z-10">
+                <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-mono px-3 py-1 rounded-full uppercase tracking-widest">
+                    Live Status: Quiet Hours
+                </span>
+                <span class="w-3 h-3 bg-emerald-400 rounded-full animate-pulse shadow-sm"></span>
+            </div>
+            
+            <div class="space-y-3 relative z-10 pt-16">
+                <div class="bg-white/10 backdrop-blur-md p-4 rounded-3xl border border-white/20 flex justify-between items-center text-white">
+                    <span class="text-xs font-medium">Daily Active Guests</span>
+                    <span class="text-xs font-mono text-emerald-300 font-bold">142 Relaxing</span>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-4 rounded-3xl border border-white/20 flex justify-between items-center text-white">
+                    <span class="text-xs font-medium">Holistic Therapists</span>
+                    <span class="text-xs font-mono text-emerald-300 font-bold">24 Certified Experts</span>
+                </div>
+            </div>
+            
+            <div class="text-[11px] text-stone-200 text-center relative z-10 pt-2 font-medium">
+                100% Organic Botanical Oils & Sustainable Practices
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN DE CATEGORÍAS / PESTAÑAS (4 ELEMENTOS CON ICONOS) -->
+    <section class="max-w-7xl mx-auto px-6 py-6" id="sanctuary">
+        <div class="mb-5">
+            <h2 class="text-xl font-black uppercase tracking-wide text-stone-900">Sanctuary Pillars</h2>
+            <p class="text-xs text-stone-500 mt-0.5 font-medium">Choose your primary path to deep physical and mental alignment.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-3xl shadow-xs border border-stone-200/70 flex flex-col items-center justify-center text-center hover:shadow-md hover:border-[#3B5345] transition cursor-pointer group">
+                <div class="w-12 h-12 bg-[#E4ECE7] text-[#3B5345] rounded-2xl mb-3 flex items-center justify-center text-lg group-hover:scale-110 transition">💆‍♀️</div>
+                <h3 class="font-extrabold text-xs text-stone-900 tracking-wider uppercase">MASSAGE THERAPY</h3>
+                <span class="text-[10px] text-stone-400 mt-1 font-medium">Deep tissue & Swedish</span>
+            </div>
+            <div class="bg-white p-6 rounded-3xl shadow-xs border border-stone-200/70 flex flex-col items-center justify-center text-center hover:shadow-md hover:border-[#3B5345] transition cursor-pointer group">
+                <div class="w-12 h-12 bg-[#E4ECE7] text-[#3B5345] rounded-2xl mb-3 flex items-center justify-center text-lg group-hover:scale-110 transition">🌿</div>
+                <h3 class="font-extrabold text-xs text-stone-900 tracking-wider uppercase">BOTANICAL FACIALS</h3>
+                <span class="text-[10px] text-stone-400 mt-1 font-medium">Organic glow & detox</span>
+            </div>
+            <div class="bg-white p-6 rounded-3xl shadow-xs border border-stone-200/70 flex flex-col items-center justify-center text-center hover:shadow-md hover:border-[#3B5345] transition cursor-pointer group">
+                <div class="w-12 h-12 bg-[#E4ECE7] text-[#3B5345] rounded-2xl mb-3 flex items-center justify-center text-lg group-hover:scale-110 transition">💧</div>
+                <h3 class="font-extrabold text-xs text-stone-900 tracking-wider uppercase">HYDROTHERAPY</h3>
+                <span class="text-[10px] text-stone-400 mt-1 font-medium">Thermal baths & saunas</span>
+            </div>
+            <div class="bg-white p-6 rounded-3xl shadow-xs border border-stone-200/70 flex flex-col items-center justify-center text-center hover:shadow-md hover:border-[#3B5345] transition cursor-pointer group">
+                <div class="w-12 h-12 bg-[#E4ECE7] text-[#3B5345] rounded-2xl mb-3 flex items-center justify-center text-lg group-hover:scale-110 transition">🧘‍♀️</div>
+                <h3 class="font-extrabold text-xs text-stone-900 tracking-wider uppercase">SOUND HEALING</h3>
+                <span class="text-[10px] text-stone-400 mt-1 font-medium">Tibetan bowls & breath</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CATÁLOGO DE 8 TARJETAS DE SERVICIOS / TRATAMIENTOS (2 FILAS DE 4) -->
+    <section class="max-w-7xl mx-auto px-6 py-10" id="services">
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h2 class="text-xl font-black uppercase tracking-wide text-stone-900">Featured Treatments</h2>
+                <p class="text-xs text-stone-500 mt-0.5 font-medium">Handcrafted rituals performed by master wellness therapists.</p>
+            </div>
+            <span class="text-xs font-bold text-[#3B5345] hover:underline cursor-pointer tracking-wider">VIEW ALL (16)</span>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+            
+            <!-- Card 1 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3B5345] text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$140</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=500&q=80" alt="Swedish Massage" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">60 Minutes</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Nordic Deep Tissue Relief</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(184)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#E4ECE7] text-[#3B5345] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3B5345] hover:text-white transition">
+                        Select Ritual
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3B5345] text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$165</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=500&q=80" alt="Botanical Facial" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">75 Minutes</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Eucalyptus Botanical Glow</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(96)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#E4ECE7] text-[#3B5345] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3B5345] hover:text-white transition">
+                        Select Ritual
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3B5345] text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$190</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=500&q=80" alt="Hot Stone Therapy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">90 Minutes</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Volcanic Hot Stone Alchemy</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(230)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#E4ECE7] text-[#3B5345] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3B5345] hover:text-white transition">
+                        Select Ritual
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3B5345] text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$120</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=500&q=80" alt="Aromatherapy Ritual" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">60 Minutes</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Lavender Sleep Harmony</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(142)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#E4ECE7] text-[#3B5345] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3B5345] hover:text-white transition">
+                        Select Ritual
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3B5345] text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$210</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=500&q=80" alt="Couples Retreat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">90 Minutes</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Couples Sanctuary Escape</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(310)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#E4ECE7] text-[#3B5345] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3B5345] hover:text-white transition">
+                        Select Ritual
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3B5345] text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$130</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=500&q=80" alt="Salt Scrub" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">60 Minutes</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Himalayan Salt Body Polish</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(78)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#E4ECE7] text-[#3B5345] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3B5345] hover:text-white transition">
+                        Select Ritual
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3B5345] text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$150</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1512290900672-1c735d491f63?auto=format&fit=crop&w=500&q=80" alt="Reflexology" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">60 Minutes</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Zen Foot Reflexology & Chi</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(115)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#E4ECE7] text-[#3B5345] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3B5345] hover:text-white transition">
+                        Select Ritual
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3B5345] text-white text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$240</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80" alt="Chakra Alignment" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">120 Minutes</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Complete Chakra Awakening</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(190)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#E4ECE7] text-[#3B5345] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3B5345] hover:text-white transition">
+                        Select Ritual
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. SECCIÓN MIXTA: TARJETA DE BENEFICIOS Y COLLAGE DE FOTOS SIMÉTRICO ESTILO GALERÍA -->
+    <section class="max-w-7xl mx-auto px-6 py-10" id="rituals">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            
+            <!-- Columna Izquierda: Tarjeta de Beneficios -->
+            <div class="md:col-span-5 bg-[#3B5345] text-white p-8 md:p-10 rounded-[2.5rem] shadow-xl flex flex-col justify-between relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-36 h-36 bg-emerald-400/10 rounded-full blur-2xl"></div>
+                <div class="space-y-4 relative z-10">
+                    <span class="bg-white/20 text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-widest">The Aura Promise</span>
+                    <h2 class="text-2xl md:text-3xl font-black uppercase tracking-tight leading-tight">
+                        Pure Ingredients & Mindful Spaces
+                    </h2>
+                    <p class="text-stone-200 text-xs md:text-sm leading-relaxed">
+                        Every potion, oil, and scrub is compounded fresh daily using ethically harvested plant extracts. Step into a silent zone of peace away from urban noise.
+                    </p>
+                </div>
+                <div class="pt-8 relative z-10">
+                    <button class="bg-white text-[#3B5345] font-extrabold px-6 py-3 rounded-full text-xs hover:bg-stone-100 transition shadow-md">
+                        Read Our Manifesto
+                    </button>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Collage de 6 fotos simétrico estilo galería -->
+            <div class="md:col-span-7 grid grid-cols-3 gap-3">
+                <div class="h-32 bg-stone-200 rounded-2xl overflow-hidden shadow-xs hover:opacity-95 transition">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=400&q=80" alt="Gallery 1" class="w-full h-full object-cover">
+                </div>
+                <div class="h-32 bg-stone-200 rounded-2xl overflow-hidden shadow-xs hover:opacity-95 transition">
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=400&q=80" alt="Gallery 2" class="w-full h-full object-cover">
+                </div>
+                <div class="h-32 bg-stone-200 rounded-2xl overflow-hidden shadow-xs hover:opacity-95 transition">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80" alt="Gallery 3" class="w-full h-full object-cover">
+                </div>
+                <div class="h-32 bg-stone-200 rounded-2xl overflow-hidden shadow-xs hover:opacity-95 transition">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=400&q=80" alt="Gallery 4" class="w-full h-full object-cover">
+                </div>
+                <div class="h-32 bg-stone-200 rounded-2xl overflow-hidden shadow-xs hover:opacity-95 transition">
+                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=400&q=80" alt="Gallery 5" class="w-full h-full object-cover">
+                </div>
+                <div class="h-32 bg-stone-200 rounded-2xl overflow-hidden shadow-xs hover:opacity-95 transition">
+                    <img src="https://images.unsplash.com/photo-1512290900672-1c735d491f63?auto=format&fit=crop&w=400&q=80" alt="Gallery 6" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. BANNER INSTITUCIONAL ANCHO -->
+    <section class="max-w-7xl mx-auto px-6 py-4" id="membership">
+        <div class="bg-[#3B5345] text-white text-center py-5 px-6 rounded-3xl font-extrabold text-xs uppercase tracking-widest shadow-md flex flex-col md:flex-row justify-center items-center gap-3">
+            <span>🌿 Aura Wellness Studio – Certified Organic Sanctuary & Holistic Spa Excellence</span>
+            <span class="bg-white/20 text-emerald-200 px-3 py-1 rounded-full text-[10px]">Learn More</span>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER PROFESIONAL COMPLETO DE 4 COLUMNAS -->
+    <footer class="bg-stone-900 text-stone-400 px-8 py-16 mt-16 text-xs border-t border-stone-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-stone-800">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-8 h-8 bg-[#3B5345] text-white rounded-xl flex items-center justify-center font-black text-xs">A</div>
+                    <span class="font-black text-sm tracking-widest uppercase text-white">Aura Studio</span>
+                </div>
+                <p class="text-[11px] text-stone-400 leading-relaxed">
+                    Your sanctuary for ultimate physical restoration, mental calm, and organic botanical care.
+                </p>
+            </div>
+            <div>
+                <h5 class="font-extrabold text-white mb-4 uppercase tracking-wider text-[11px]">Sanctuary Menu</h5>
+                <ul class="space-y-2 text-stone-400 font-medium">
+                    <li><a href="#" class="hover:text-white transition">Massage Therapy</a></li>
+                    <li><a href="#" class="hover:text-white transition">Botanical Facials</a></li>
+                    <li><a href="#" class="hover:text-white transition">Hydrotherapy Baths</a></li>
+                    <li><a href="#" class="hover:text-white transition">Sound Healing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-extrabold text-white mb-4 uppercase tracking-wider text-[11px]">Client Care</h5>
+                <ul class="space-y-2 text-stone-400 font-medium">
+                    <li><a href="#" class="hover:text-white transition">Booking Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition">Gift Vouchers</a></li>
+                    <li><a href="#" class="hover:text-white transition">Private Events</a></li>
+                    <li><a href="#" class="hover:text-white transition">Privacy & Terms</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h5 class="font-extrabold text-white mb-4 uppercase tracking-wider text-[11px]">Join Our Circle</h5>
+                <p class="text-[11px] text-stone-400">Receive weekly mindfulness guides and seasonal offers.</p>
+                <div class="flex gap-2 pt-1">
+                    <input type="email" placeholder="Enter your email address" class="bg-stone-800 px-4 py-2.5 rounded-xl text-xs outline-none w-full border border-stone-700 text-white placeholder-stone-500 focus:border-emerald-500 transition">
+                    <button class="bg-[#3B5345] text-white px-5 py-2.5 rounded-xl font-bold hover:bg-[#2C3F34] transition shadow-sm">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 text-center text-stone-500 text-[11px] font-medium flex flex-col md:flex-row justify-between items-center gap-4">
+            <span>&copy; 2026 Aura Wellness & Spa Studio. All Rights Reserved.</span>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-stone-300">Instagram</a>
+                <a href="#" class="hover:text-stone-300">Spotify Playlists</a>
+                <a href="#" class="hover:text-stone-300">Journal</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

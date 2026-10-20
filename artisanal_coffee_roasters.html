@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra & Bean - Artisanal Coffee Roasters & Specialty Cafe</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#FBF9F5] text-[#2C221E] antialiased selection:bg-amber-200">
+
+    <!-- 1. COMPLEX TOP NAVBAR -->
+    <header class="bg-white/90 backdrop-blur-md border-b border-[#EFECE6] px-6 py-4 sticky top-0 z-50 shadow-2xs">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-[#3E2723] text-amber-100 rounded-2xl flex items-center justify-center font-black text-xs tracking-wider shadow-sm">T&B</div>
+                <div>
+                    <span class="font-extrabold text-sm tracking-widest uppercase text-[#3E2723] block leading-none">Terra & Bean</span>
+                    <span class="text-[9px] font-bold text-amber-800 tracking-wider uppercase">Artisanal Roasters</span>
+                </div>
+            </div>
+            
+            <!-- Central Search Bar -->
+            <div class="hidden md:flex items-center bg-[#F4F1EA] border border-[#E7E2D6] rounded-full px-4 py-2 w-80">
+                <span class="text-amber-800/60 text-xs mr-2">🔍</span>
+                <input type="text" placeholder="Search single origins, cold brews, gear..." class="bg-transparent text-xs outline-none w-full text-[#3E2723] placeholder-stone-400 font-medium">
+            </div>
+
+            <!-- Right Actions -->
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-xs font-bold text-stone-700 hover:text-[#3E2723] hidden lg:inline">Locations</a>
+                <button class="bg-[#3E2723] text-amber-100 px-6 py-2.5 rounded-full font-bold text-xs tracking-wider shadow-md hover:bg-[#2C1B18] transition">
+                    ORDER ONLINE
+                </button>
+            </div>
+        </div>
+
+        <!-- Category Links Sub-Navbar -->
+        <nav class="max-w-7xl mx-auto hidden md:flex justify-center gap-8 text-xs font-bold text-stone-600 pt-3 border-t border-[#F4F1EA] mt-3">
+            <a href="#" class="hover:text-[#3E2723] transition">SINGLE ORIGIN</a>
+            <a href="#" class="hover:text-[#3E2723] transition">SIGNATURE BLENDS</a>
+            <a href="#" class="hover:text-[#3E2723] transition">COLD BREW</a>
+            <a href="#" class="hover:text-[#3E2723] transition">ESPRESSO BAR</a>
+            <a href="#" class="hover:text-[#3E2723] transition">BREWING GEAR</a>
+            <a href="#" class="hover:text-[#3E2723] transition">SUSTAINABILITY</a>
+        </nav>
+    </header>
+
+    <!-- 2. MASSIVE HERO SECTION WITH FEATURE IMAGE -->
+    <section class="max-w-7xl mx-auto px-6 py-12 md:py-16 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+        <div class="md:col-span-7 space-y-6">
+            <span class="bg-amber-100/70 text-amber-900 text-[11px] font-extrabold px-4 py-1.5 rounded-full uppercase tracking-widest border border-amber-200">
+                ☕ Fresh Small-Batch Roast • Free Shipping on $50+
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tight leading-[1.08] text-[#2C221E]">
+                Exceptional Coffee, Ethically Sourced & Roasted.
+            </h1>
+            <p class="text-stone-600 text-sm md:text-base leading-relaxed max-w-xl font-medium">
+                Experience world-class specialty coffee harvested from high-altitude micro-lots and roasted to perfection in our artisanal roastery.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <button class="bg-[#3E2723] text-amber-100 font-bold px-8 py-3.5 rounded-full shadow-lg hover:bg-[#2C1B18] transition text-xs tracking-wider">
+                    Shop Best Sellers
+                </button>
+                <button class="bg-white border border-stone-300 text-stone-700 font-bold px-8 py-3.5 rounded-full hover:bg-stone-50 transition text-xs tracking-wider">
+                    Our Roasting Process
+                </button>
+            </div>
+        </div>
+        
+        <!-- Feature Image Hero -->
+        <div class="md:col-span-5 relative bg-[#3E2723] rounded-[2.5rem] overflow-hidden shadow-2xl h-96 flex items-center justify-center border-4 border-white">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="Artisanal Coffee Pour Over" class="w-full h-full object-cover opacity-90 hover:scale-105 transition duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-8">
+                <div class="text-white">
+                    <span class="text-[10px] font-mono bg-amber-600 px-2.5 py-1 rounded-full uppercase tracking-wider">Lot #408 Ethiopia</span>
+                    <h3 class="font-extrabold text-base mt-1">Jasmine & Bergamot Notes</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. CATEGORY MENU GRID WITH WHITE ROUNDED CARDS AND ICONS -->
+    <section class="max-w-7xl mx-auto px-6 py-6">
+        <div class="mb-5">
+            <h2 class="text-xl font-black uppercase tracking-wide text-[#2C221E]">Explore Categories</h2>
+            <p class="text-xs text-stone-500 mt-0.5 font-medium">Find your preferred brewing style and flavor profile.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-3xl shadow-xs border border-stone-200/70 flex flex-col items-center justify-center text-center hover:shadow-md hover:border-amber-700 transition cursor-pointer group">
+                <div class="w-12 h-12 bg-amber-50 text-amber-800 rounded-2xl mb-3 flex items-center justify-center text-lg group-hover:scale-110 transition">🌱</div>
+                <h3 class="font-extrabold text-xs text-stone-900 tracking-wider uppercase">SINGLE ORIGIN</h3>
+                <span class="text-[10px] text-stone-400 mt-1 font-medium">Direct trade beans</span>
+            </div>
+            <div class="bg-white p-6 rounded-3xl shadow-xs border border-stone-200/70 flex flex-col items-center justify-center text-center hover:shadow-md hover:border-amber-700 transition cursor-pointer group">
+                <div class="w-12 h-12 bg-amber-50 text-amber-800 rounded-2xl mb-3 flex items-center justify-center text-lg group-hover:scale-110 transition">🍂</div>
+                <h3 class="font-extrabold text-xs text-stone-900 tracking-wider uppercase">SIGNATURE BLENDS</h3>
+                <span class="text-[10px] text-stone-400 mt-1 font-medium">Balanced espresso roasts</span>
+            </div>
+            <div class="bg-white p-6 rounded-3xl shadow-xs border border-stone-200/70 flex flex-col items-center justify-center text-center hover:shadow-md hover:border-amber-700 transition cursor-pointer group">
+                <div class="w-12 h-12 bg-amber-50 text-amber-800 rounded-2xl mb-3 flex items-center justify-center text-lg group-hover:scale-110 transition">🧊</div>
+                <h3 class="font-extrabold text-xs text-stone-900 tracking-wider uppercase">COLD BREW</h3>
+                <span class="text-[10px] text-stone-400 mt-1 font-medium">Smooth 18-hour steep</span>
+            </div>
+            <div class="bg-white p-6 rounded-3xl shadow-xs border border-stone-200/70 flex flex-col items-center justify-center text-center hover:shadow-md hover:border-amber-700 transition cursor-pointer group">
+                <div class="w-12 h-12 bg-amber-50 text-amber-800 rounded-2xl mb-3 flex items-center justify-center text-lg group-hover:scale-110 transition">⚙️</div>
+                <h3 class="font-extrabold text-xs text-stone-900 tracking-wider uppercase">BREWING GEAR</h3>
+                <span class="text-[10px] text-stone-400 mt-1 font-medium">Grinders & drippers</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 8-PRODUCT BESTSELLER GRID ACROSS TWO ROWS -->
+    <section class="max-w-7xl mx-auto px-6 py-10">
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h2 class="text-xl font-black uppercase tracking-wide text-[#2C221E]">Bestselling Roasts</h2>
+                <p class="text-xs text-stone-500 mt-0.5 font-medium">Freshly roasted weekly in small batches.</p>
+            </div>
+            <span class="text-xs font-bold text-[#3E2723] hover:underline cursor-pointer tracking-wider">VIEW ALL ROASTS</span>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+            
+            <!-- Card 1 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3E2723] text-amber-100 text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$18.50</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=500&q=80" alt="Yirgacheffe Coffee" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">Ethiopia • Light Roast</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Yirgacheffe Natural Grade 1</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(240)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#F4F1EA] text-[#3E2723] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3E2723] hover:text-amber-100 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3E2723] text-amber-100 text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$17.00</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Colombian Supremo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">Colombia • Medium Roast</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Antioquia Supremo Reserve</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(182)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#F4F1EA] text-[#3E2723] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3E2723] hover:text-amber-100 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3E2723] text-amber-100 text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$19.50</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1587049352847-4a222e784d38?auto=format&fit=crop&w=500&q=80" alt="Guatemala Antigua" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">Guatemala • Dark Roast</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Antigua Volcanic Dark</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(310)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#F4F1EA] text-[#3E2723] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3E2723] hover:text-amber-100 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3E2723] text-amber-100 text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$21.00</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=500&q=80" alt="Sumatra Mandheling" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">Sumatra • Dark Roast</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Mandheling Organic Reserve</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(145)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#F4F1EA] text-[#3E2723] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3E2723] hover:text-amber-100 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3E2723] text-amber-100 text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$16.50</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="House Espresso" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">Blend • Espresso</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Velvet Crema House Blend</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(420)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#F4F1EA] text-[#3E2723] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3E2723] hover:text-amber-100 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3E2723] text-amber-100 text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$22.00</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=500&q=80" alt="Kenya Nyeri" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">Kenya • Light Roast</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Nyeri Hill AA Micro-Lot</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(98)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#F4F1EA] text-[#3E2723] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3E2723] hover:text-amber-100 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3E2723] text-amber-100 text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$18.00</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=500&q=80" alt="Costa Rica Tarrazu" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">Costa Rica • Medium</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Tarrazu Honey Processed</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(164)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#F4F1EA] text-[#3E2723] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3E2723] hover:text-amber-100 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-stone-200/70 flex flex-col justify-between relative group hover:shadow-md transition">
+                <span class="absolute top-6 right-6 bg-[#3E2723] text-amber-100 text-[10px] font-extrabold px-2.5 py-1 rounded-full shadow-sm z-10">$15.00</span>
+                <div class="w-full h-36 bg-stone-200 rounded-2xl mb-4 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=500&q=80" alt="Decaf Peru" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div>
+                    <span class="text-[10px] font-extrabold text-stone-400 uppercase tracking-widest">Peru • Decaf Swiss Water</span>
+                    <h3 class="font-bold text-xs text-stone-900 mt-0.5 line-clamp-1">Cajamarca Mountain Decaf</h3>
+                    <div class="flex items-center gap-1 my-1.5">
+                        <span class="text-amber-500 text-[10px]">★★★★★</span>
+                        <span class="text-[10px] text-stone-400 font-semibold">(112)</span>
+                    </div>
+                    <button class="w-full mt-2 bg-[#F4F1EA] text-[#3E2723] py-2 rounded-xl text-[11px] font-bold hover:bg-[#3E2723] hover:text-amber-100 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. OUR CRAFT & PROMISE SECTION -->
+    <section class="max-w-7xl mx-auto px-6 py-10">
+        <div class="mb-6">
+            <h2 class="text-xl font-black uppercase tracking-wide text-[#2C221E]">Our Craft & Promise</h2>
+            <p class="text-xs text-stone-500 mt-0.5 font-medium">Sustainable farming, precision roasting, and unmatched quality.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            
+            <!-- Left Column: Icon Badges & Promotional Ticket Card -->
+            <div class="md:col-span-6 space-y-4">
+                <!-- Icon Badges Grid -->
+                <div class="bg-amber-50/60 border border-amber-100 p-6 rounded-3xl grid grid-cols-4 gap-3 text-center">
+                    <div>
+                        <div class="w-10 h-10 bg-white mx-auto rounded-full flex items-center justify-center text-sm shadow-xs">🌍</div>
+                        <span class="text-[10px] font-extrabold text-[#3E2723] block mt-1.5">DIRECT TRADE</span>
+                    </div>
+                    <div>
+                        <div class="w-10 h-10 bg-white mx-auto rounded-full flex items-center justify-center text-sm shadow-xs">🔥</div>
+                        <span class="text-[10px] font-extrabold text-[#3E2723] block mt-1.5">SMALL BATCH</span>
+                    </div>
+                    <div>
+                        <div class="w-10 h-10 bg-white mx-auto rounded-full flex items-center justify-center text-sm shadow-xs">♻️</div>
+                        <span class="text-[10px] font-extrabold text-[#3E2723] block mt-1.5">ECO PACKED</span>
+                    </div>
+                    <div>
+                        <div class="w-10 h-10 bg-white mx-auto rounded-full flex items-center justify-center text-sm shadow-xs">⚡</div>
+                        <span class="text-[10px] font-extrabold text-[#3E2723] block mt-1.5">FAST ROAST</span>
+                    </div>
+                </div>
+
+                <!-- Promotional Ticket / Coupon Card -->
+                <div class="bg-[#3E2723] text-amber-100 p-6 rounded-3xl flex justify-between items-center shadow-xl">
+                    <div>
+                        <span class="text-[10px] font-extrabold bg-amber-600/40 text-amber-300 px-2.5 py-1 rounded-full uppercase tracking-wider">Roaster's Club Voucher</span>
+                        <h4 class="font-black text-sm text-white mt-2">Get 20% off your first subscription bag</h4>
+                    </div>
+                    <button class="bg-amber-100 text-[#3E2723] font-black px-5 py-2.5 rounded-xl text-xs shadow-md hover:bg-white transition">
+                        CLAIM NOW
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column: Asymmetrical 4-Photo Collage -->
+            <div class="md:col-span-6 grid grid-cols-2 gap-3">
+                <div class="h-40 bg-stone-200 rounded-2xl overflow-hidden shadow-xs">
+                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=500&q=80" alt="Coffee Cherries" class="w-full h-full object-cover">
+                </div>
+                <div class="h-40 bg-stone-200 rounded-2xl overflow-hidden shadow-xs">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Pour Over" class="w-full h-full object-cover">
+                </div>
+                <div class="h-40 bg-stone-200 rounded-2xl overflow-hidden shadow-xs">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=500&q=80" alt="Espresso Bar" class="w-full h-full object-cover">
+                </div>
+                <div class="h-40 bg-stone-200 rounded-2xl overflow-hidden shadow-xs">
+                    <img src="https://images.unsplash.com/photo-1587049352847-4a222e784d38?auto=format&fit=crop&w=500&q=80" alt="Roastery Beans" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. INSTITUTIONAL CERTIFICATION BANNER -->
+    <section class="max-w-7xl mx-auto px-6 py-4">
+        <div class="bg-[#3E2723] text-amber-100 text-center py-4 px-6 rounded-2xl font-extrabold text-xs uppercase tracking-widest shadow-md">
+            ☕ Terra & Bean – Certified Fair Trade & Organic Artisan Coffee Roasters Since 2014
+        </div>
+    </section>
+
+    <!-- 7. DETAILED 4-COLUMN PROFESSIONAL FOOTER -->
+    <footer class="bg-[#1F1412] text-stone-400 px-8 py-16 mt-16 text-xs border-t border-[#3E2723]">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-[#3E2723]">
+            <div>
+                <div class="flex items-center gap-2.5 mb-4">
+                    <div class="w-8 h-8 bg-amber-700 text-amber-100 rounded-xl flex items-center justify-center font-black text-xs">T</div>
+                    <span class="font-extrabold text-sm tracking-widest uppercase text-white">Terra & Bean</span>
+                </div>
+                <p class="text-[11px] text-stone-400 leading-relaxed">
+                    Dedicated to roasting the finest specialty coffee beans while supporting regenerative farming communities worldwide.
+                </p>
+            </div>
+            <div>
+                <h5 class="font-extrabold text-white mb-4 uppercase tracking-wider text-[11px]">Roastery Menu</h5>
+                <ul class="space-y-2 text-stone-400 font-medium">
+                    <li><a href="#" class="hover:text-white transition">Single Origin Roasts</a></li>
+                    <li><a href="#" class="hover:text-white transition">Signature Espresso</a></li>
+                    <li><a href="#" class="hover:text-white transition">Cold Brew Bar</a></li>
+                    <li><a href="#" class="hover:text-white transition">Brewing Hardware</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-extrabold text-white mb-4 uppercase tracking-wider text-[11px]">Customer Care</h5>
+                <ul class="space-y-2 text-stone-400 font-medium">
+                    <li><a href="#" class="hover:text-white transition">Subscription FAQ</a></li>
+                    <li><a href="#" class="hover:text-white transition">Wholesale & Cafes</a></li>
+                    <li><a href="#" class="hover:text-white transition">Store Locator</a></li>
+                    <li><a href="#" class="hover:text-white transition">Privacy & Terms</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h5 class="font-extrabold text-white mb-4 uppercase tracking-wider text-[11px]">Join The Club</h5>
+                <p class="text-[11px] text-stone-400">Get brew guides and early access to limited micro-lots.</p>
+                <div class="flex gap-2 pt-1">
+                    <input type="email" placeholder="Enter your email" class="bg-[#2C1B18] px-4 py-2.5 rounded-xl text-xs outline-none w-full border border-[#3E2723] text-white placeholder-stone-500 focus:border-amber-600 transition">
+                    <button class="bg-amber-700 text-amber-100 px-5 py-2.5 rounded-xl font-bold hover:bg-amber-600 transition shadow-sm">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 text-center text-stone-500 text-[11px] font-medium flex flex-col md:flex-row justify-between items-center gap-4">
+            <span>&copy; 2026 Terra & Bean Roasters. All Rights Reserved.</span>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-stone-300">Instagram</a>
+                <a href="#" class="hover:text-stone-300">Brewing Guides</a>
+                <a href="#" class="hover:text-stone-300">Spotify Sessions</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
