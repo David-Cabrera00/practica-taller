@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crust Pizza — Ejemplo de examen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-100 text-stone-900 antialiased">
+
+  <!-- NAVBAR -->
+  <header class="bg-white">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
+      <a href="#" class="text-lg font-black tracking-tight">CRUST<span class="text-orange-600">.</span></a>
+      <div class="hidden items-center gap-6 text-xs font-bold uppercase md:flex">
+        <a href="#menu" class="hover:text-orange-600">Menú</a>
+        <a href="#nosotros" class="hover:text-orange-600">Nosotros</a>
+        <a href="#experiencia" class="hover:text-orange-600">Experiencia</a>
+        <a href="#contacto" class="hover:text-orange-600">Contacto</a>
+      </div>
+      <a href="#menu" class="rounded-full bg-orange-600 px-4 py-2 text-xs font-bold text-white hover:bg-orange-700">
+        Ordenar ahora
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="px-4 pt-4">
+      <div class="relative mx-auto flex min-h-[390px] max-w-7xl items-end overflow-hidden rounded-3xl bg-stone-800 bg-cover bg-center p-7 text-white md:min-h-[480px] md:p-12"
+           style="background-image: linear-gradient(90deg, rgba(0,0,0,.78), rgba(0,0,0,.08)), url('https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1600&q=85');">
+        <div class="max-w-xl">
+          <span class="inline-flex rounded-full bg-orange-600 px-3 py-1 text-xs font-bold uppercase tracking-widest">Hecha con pasión</span>
+          <h1 class="mt-5 text-4xl font-black uppercase leading-none tracking-tight md:text-6xl">
+            For delicious,<br>made-from-scratch pizzas
+          </h1>
+          <p class="mt-5 max-w-md text-sm leading-relaxed text-white/80 md:text-base">
+            Masa fresca, ingredientes de calidad y recetas creadas para compartir.
+          </p>
+          <a href="#menu" class="mt-7 inline-flex rounded-full bg-orange-600 px-6 py-3 text-sm font-bold text-white hover:bg-orange-700">
+            Explorar menú <span class="ml-2">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU / TARJETAS -->
+    <section id="menu" class="px-5 py-16 md:py-20">
+      <div class="mx-auto max-w-7xl">
+        <div class="mb-7 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p class="text-xs font-black uppercase tracking-[.2em] text-orange-600">Nuestro menú</p>
+            <h2 class="mt-2 text-3xl font-black uppercase tracking-tight md:text-4xl">Favoritas de la casa</h2>
+          </div>
+          <a href="#contacto" class="text-sm font-bold hover:text-orange-600">Ver menú completo ↗</a>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+          <article class="overflow-hidden rounded-2xl bg-white p-3 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=600&q=80" alt="Pizza de pepperoni" class="aspect-[4/3] w-full rounded-xl object-cover">
+            <h3 class="mt-3 text-sm font-black uppercase md:text-base">Classic pepperoni</h3>
+            <p class="mt-1 text-xs leading-relaxed text-stone-500">Pepperoni, mozzarella y salsa de tomate.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="text-sm font-black">$28.000</span>
+              <button aria-label="Agregar Classic pepperoni" class="flex h-8 w-8 items-center justify-center rounded-full bg-orange-600 font-bold text-white hover:bg-orange-700">+</button>
+            </div>
+          </article>
+
+          <article class="overflow-hidden rounded-2xl bg-white p-3 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Pizza vegetariana" class="aspect-[4/3] w-full rounded-xl object-cover">
+            <h3 class="mt-3 text-sm font-black uppercase md:text-base">Garden fresh</h3>
+            <p class="mt-1 text-xs leading-relaxed text-stone-500">Vegetales frescos, queso y hierbas.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="text-sm font-black">$26.000</span>
+              <button aria-label="Agregar Garden fresh" class="flex h-8 w-8 items-center justify-center rounded-full bg-orange-600 font-bold text-white hover:bg-orange-700">+</button>
+            </div>
+          </article>
+
+          <article class="overflow-hidden rounded-2xl bg-white p-3 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=600&q=80" alt="Pizza de queso" class="aspect-[4/3] w-full rounded-xl object-cover">
+            <h3 class="mt-3 text-sm font-black uppercase md:text-base">Four cheese</h3>
+            <p class="mt-1 text-xs leading-relaxed text-stone-500">Mezcla de quesos sobre masa artesanal.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="text-sm font-black">$30.000</span>
+              <button aria-label="Agregar Four cheese" class="flex h-8 w-8 items-center justify-center rounded-full bg-orange-600 font-bold text-white hover:bg-orange-700">+</button>
+            </div>
+          </article>
+
+          <article class="overflow-hidden rounded-2xl bg-white p-3 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=600&q=80" alt="Pizza especial de la casa" class="aspect-[4/3] w-full rounded-xl object-cover">
+            <h3 class="mt-3 text-sm font-black uppercase md:text-base">House special</h3>
+            <p class="mt-1 text-xs leading-relaxed text-stone-500">Nuestra combinación especial de ingredientes.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="text-sm font-black">$32.000</span>
+              <button aria-label="Agregar House special" class="flex h-8 w-8 items-center justify-center rounded-full bg-orange-600 font-bold text-white hover:bg-orange-700">+</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS: TEXTO + ICONOS -->
+    <section id="nosotros" class="bg-white px-5 py-16 md:py-20">
+      <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 md:grid-cols-2">
+        <div>
+          <p class="text-xs font-black uppercase tracking-[.2em] text-orange-600">La experiencia Crust</p>
+          <h2 class="mt-3 text-3xl font-black uppercase leading-tight md:text-5xl">Home of the Chicago-style thin crust pizza</h2>
+          <p class="mt-5 max-w-xl leading-relaxed text-stone-600">
+            Una buena pizza comienza con una masa preparada con cuidado. Combinamos técnicas artesanales, ingredientes frescos y un ambiente pensado para disfrutar.
+          </p>
+          <div class="mt-7 grid grid-cols-2 gap-3 sm:grid-cols-3">
+            <div class="rounded-2xl bg-stone-100 p-4 text-center">
+              <div class="text-2xl">♨</div><p class="mt-2 text-xs font-bold">Horneado al momento</p>
+            </div>
+            <div class="rounded-2xl bg-stone-100 p-4 text-center">
+              <div class="text-2xl">✦</div><p class="mt-2 text-xs font-bold">Ingredientes frescos</p>
+            </div>
+            <div class="rounded-2xl bg-stone-100 p-4 text-center">
+              <div class="text-2xl">♡</div><p class="mt-2 text-xs font-bold">Hecha con pasión</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1000&q=85" alt="Pizza recién horneada" class="h-80 w-full rounded-3xl object-cover md:h-[470px]">
+          <div class="absolute -bottom-4 -left-3 rounded-2xl bg-orange-600 p-5 text-white shadow-lg md:-left-5">
+            <p class="text-3xl font-black">100%</p><p class="text-xs font-bold uppercase">Sabor artesanal</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER / CTA -->
+    <section id="experiencia" class="px-5 py-16">
+      <div class="mx-auto grid max-w-7xl grid-cols-1 gap-4 md:grid-cols-2">
+        <div class="flex min-h-64 flex-col justify-end rounded-3xl bg-stone-900 p-7 text-white md:p-10">
+          <p class="text-xs font-bold uppercase tracking-widest text-orange-400">Una experiencia única</p>
+          <h2 class="mt-3 text-3xl font-black uppercase">Pizza, amigos y buenos momentos.</h2>
+          <p class="mt-3 text-sm leading-relaxed text-stone-300">El plan perfecto empieza alrededor de la mesa.</p>
+          <a href="#contacto" class="mt-5 inline-flex w-fit rounded-full bg-orange-600 px-5 py-3 text-sm font-bold hover:bg-orange-700">Conócenos ↗</a>
+        </div>
+        <div class="overflow-hidden rounded-3xl">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=85" alt="Pizza para compartir" class="h-full min-h-64 w-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="bg-stone-950 px-5 py-10 text-white">
+      <div class="mx-auto flex max-w-7xl flex-col justify-between gap-8 md:flex-row">
+        <div>
+          <a href="#" class="text-2xl font-black">CRUST<span class="text-orange-500">.</span></a>
+          <p class="mt-3 max-w-sm text-sm leading-relaxed text-stone-400">Pizza artesanal, ingredientes frescos y momentos para compartir.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-x-10 gap-y-3 text-sm text-stone-300">
+          <a href="#menu" class="hover:text-orange-400">Nuestro menú</a>
+          <a href="#nosotros" class="hover:text-orange-400">Nosotros</a>
+          <a href="#experiencia" class="hover:text-orange-400">Experiencia</a>
+          <a href="mailto:hola@crust.example" class="hover:text-orange-400">Contáctanos</a>
+        </div>
+      </div>
+      <div class="mx-auto mt-8 max-w-7xl border-t border-white/10 pt-5 text-xs text-stone-500">
+        © 2026 Crust. Ejemplo de práctica HTML + Tailwind CSS.
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

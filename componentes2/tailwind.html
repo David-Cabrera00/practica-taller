@@ -1,0 +1,132 @@
+10. Chuleta de Tailwind CSS para Pixel Perfect
+Esta es la parte que más conviene memorizar. Las clases controlan la distribución, el tamaño y la apariencia de cada bloque.
+Espaciado y dimensiones
+Objetivo    Clase de ejemplo
+Padding horizontal  px-6
+Padding vertical    py-16
+Margen superior mt-6
+Separación entre elementos  gap-4
+Ancho máximo    max-w-7xl
+Ancho completo  w-full
+Altura mínima   min-h-[450px]
+Altura personalizada    h-[320px]
+Grid y Flexbox
+Objetivo    Clase
+Elementos en fila   flex
+Separar extremos    justify-between
+Centrar verticalmente   items-center
+Dos columnas    grid grid-cols-2
+Tres columnas desde escritorio  grid grid-cols-1 md:grid-cols-3
+Cuatro tarjetas grid grid-cols-2 md:grid-cols-4
+Cambiar orientación en móvil    flex-col md:flex-row
+Tipografía y apariencia
+Objetivo    Clase
+Título grande   text-5xl
+Texto pequeño   text-sm
+Negrita fuerte  font-black
+Mayúsculas  uppercase
+Interlineado compacto   leading-none
+Esquinas redondeadas    rounded-2xl
+Bordes  border border-gray-200
+Sombra  shadow-md
+Imagen recortada    object-cover
+Imagen completa sin recorte object-contain
+Imagen como fondo   bg-cover bg-center
+10. Chuleta de Tailwind CSS para Pixel Perfect
+Esta es la parte que más conviene memorizar. Las clases controlan la distribución, el tamaño y la apariencia de cada bloque.
+Espaciado y dimensiones
+Objetivo    Clase de ejemplo
+Padding horizontal  px-6
+Padding vertical    py-16
+Margen superior mt-6
+Separación entre elementos  gap-4
+Ancho máximo    max-w-7xl
+Ancho completo  w-full
+Altura mínima   min-h-[450px]
+Altura personalizada    h-[320px]
+Grid y Flexbox
+Objetivo    Clase
+Elementos en fila   flex
+Separar extremos    justify-between
+Centrar verticalmente   items-center
+Dos columnas    grid grid-cols-2
+Tres columnas desde escritorio  grid grid-cols-1 md:grid-cols-3
+Cuatro tarjetas grid grid-cols-2 md:grid-cols-4
+Cambiar orientación en móvil    flex-col md:flex-row
+Tipografía y apariencia
+Objetivo    Clase
+Título grande   text-5xl
+Texto pequeño   text-sm
+Negrita fuerte  font-black
+Mayúsculas  uppercase
+Interlineado compacto   leading-none
+Esquinas redondeadas    rounded-2xl
+Bordes  border border-gray-200
+Sombra  shadow-md
+Imagen recortada    object-cover
+Imagen completa sin recorte object-contain
+Imagen como fondo   bg-cover bg-center
+Breakpoints para responsive
+- Sin prefijo: se aplica desde el tamaño más pequeño.
+- sm: desde 640 px.
+- md: desde 768 px.
+- lg: desde 1024 px.
+- xl: desde 1280 px.
+Por ejemplo:
+<h1 class="text-3xl md:text-5xl lg:text-6xl">
+    Mi título
+</h1>
+
+11. Cómo lograr que se parezca a la referencia
+Pixel Perfect no consiste solo en poner colores bonitos. Se trata de comparar la estructura y ajustar medidas.
+
+1. Estructura y distribución
+
+Decide si cada sección tiene una, dos, tres o cuatro columnas. Ajusta primero el grid, el flex, el ancho máximo y la altura.
+
+
+
+
+2. Imágenes
+
+Usa imágenes del mismo tipo, proporción y encuadre que la referencia. Ajusta object-cover, object-position y la altura del marco.
+
+
+
+
+3. Tipografía y espacios
+
+Ajusta el tamaño de los títulos, el interlineado, los márgenes, el padding y la distancia entre elementos.
+
+
+
+
+4. Detalles finales
+
+Corrige colores, bordes, sombras, radios y botones. Comprueba de nuevo la página en el navegador.
+
+
+
+Ejemplo de ajuste rápido
+Si las tarjetas están demasiado juntas:
+<!-- Antes -->
+<div class="grid grid-cols-4 gap-2">
+
+<!-- Después -->
+<div class="grid grid-cols-4 gap-5">
+
+
+Si la imagen es demasiado baja:
+<!-- Antes -->
+<img class="h-40 w-full object-cover">
+
+<!-- Después -->
+<img class="h-64 w-full object-cover">
+
+
+Si el contenido está demasiado ancho:
+<!-- Antes -->
+<div class="mx-auto w-full">
+
+<!-- Después -->
+<div class="mx-auto max-w-7xl px-6">
