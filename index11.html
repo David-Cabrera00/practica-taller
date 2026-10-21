@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakingo - Bakery & Pastry Shop</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#FFFDF9] text-stone-900 font-sans antialiased overflow-x-hidden">
+
+    <!-- ==========================================
+         1. NAVBAR SUPERIOR
+         ========================================== -->
+    <header class="bg-white border-b border-stone-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-2xl font-black text-rose-700 tracking-tighter">Dakingo</div>
+            
+            <!-- Buscador Central -->
+            <div class="hidden md:flex items-center bg-stone-100 border border-stone-200 rounded-full px-4 py-1.5 w-72">
+                <span class="text-stone-400 text-xs mr-2">🔍</span>
+                <input type="text" placeholder="Search..." class="bg-transparent text-xs outline-none w-full text-stone-800 placeholder-stone-400">
+            </div>
+
+            <!-- Acciones Derecha -->
+            <div class="flex items-center gap-4 text-xs font-bold">
+                <a href="#" class="text-stone-600 hover:text-rose-700">🛒 Cart (0)</a>
+                <a href="#" class="text-rose-700 hover:underline">Login / Signup</a>
+            </div>
+        </div>
+
+        <!-- Sub-navegación de Categorías -->
+        <nav class="max-w-7xl mx-auto hidden md:flex justify-between items-center px-6 pb-3 pt-1 border-t border-stone-100 text-xs font-bold text-stone-700">
+            <a href="#" class="hover:text-rose-700 transition">Cakes</a>
+            <a href="#" class="hover:text-rose-700 transition">Theme Cakes</a>
+            <a href="#" class="hover:text-rose-700 transition">Desserts</a>
+            <a href="#" class="hover:text-rose-700 transition">Birthday</a>
+            <a href="#" class="hover:text-rose-700 transition">Hampers</a>
+            <a href="#" class="hover:text-rose-700 transition">Anniversary</a>
+            <a href="#" class="hover:text-rose-700 transition">Occasions</a>
+            <button class="bg-rose-700 text-white px-5 py-2 rounded-full font-bold shadow-sm hover:bg-rose-800 transition">
+                ORDER NOW
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- ==========================================
+         2. HERO SECTION PRINCIPAL (ROJO/VINO)
+         ========================================== -->
+    <section class="max-w-7xl mx-auto px-6 py-6">
+        <div class="bg-gradient-to-r from-rose-700 to-rose-600 rounded-[2.5rem] p-8 md:p-12 text-white relative overflow-hidden shadow-xl grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            
+            <!-- Foto Circular Grande a la Izquierda -->
+            <div class="md:col-span-4 flex justify-center">
+                <div class="w-60 h-60 md:w-68 md:h-68 bg-stone-900 rounded-full border-4 border-white/30 shadow-2xl flex items-center justify-center overflow-hidden">
+                    <span class="text-stone-400 text-xs font-medium">[ Foto Torta Principal ]</span>
+                </div>
+            </div>
+
+            <!-- Títulos y Texto Central -->
+            <div class="md:col-span-5 space-y-4 text-center md:text-left">
+                <span class="bg-white/20 text-white text-[10px] font-black px-3.5 py-1.5 rounded-full uppercase tracking-widest border border-white/20">
+                    Special Offer
+                </span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight leading-none text-white">
+                    Decadent Chocolate Bliss!
+                </h1>
+                <p class="text-rose-100 text-xs md:text-sm font-medium">
+                    Satisfy Your Sweetest Cravings with our master recipes.
+                </p>
+                <div class="inline-block bg-rose-950/80 text-rose-200 text-xs font-black px-4 py-2 rounded-xl border border-rose-500/30">
+                    SAVE 20% TODAY
+                </div>
+            </div>
+
+            <!-- Miniaturas Circulares a la Derecha -->
+            <div class="md:col-span-3 flex md:flex-col justify-center gap-4">
+                <div class="w-24 h-24 bg-stone-900 rounded-full border-2 border-white/30 shadow-lg flex items-center justify-center text-[10px] text-stone-400 text-center p-2">
+                    [ Mini 1 ]
+                </div>
+                <div class="w-24 h-24 bg-stone-900 rounded-full border-2 border-white/30 shadow-lg flex items-center justify-center text-[10px] text-stone-400 text-center p-2 md:translate-x-6">
+                    [ Mini 2 ]
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         3. SECCIÓN MENÚ (4 TARJETAS DE CATEGORÍA)
+         ========================================== -->
+    <section class="max-w-7xl mx-auto px-6 py-8">
+        <div class="mb-4">
+            <h2 class="text-xl font-black uppercase text-stone-900">Menu</h2>
+            <p class="text-xs text-stone-500">What will you wish for?</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-3xl border border-stone-200 shadow-xs flex flex-col items-center justify-center hover:shadow-md transition cursor-pointer">
+                <div class="w-12 h-12 bg-rose-50 rounded-2xl mb-3 flex items-center justify-center text-rose-700 font-bold">🍰</div>
+                <span class="text-xs font-black uppercase text-stone-900">Classic</span>
+            </div>
+            <div class="bg-white p-6 rounded-3xl border border-stone-200 shadow-xs flex flex-col items-center justify-center hover:shadow-md transition cursor-pointer">
+                <div class="w-12 h-12 bg-rose-50 rounded-2xl mb-3 flex items-center justify-center text-rose-700 font-bold">🧁</div>
+                <span class="text-xs font-black uppercase text-stone-900">Gourmet</span>
+            </div>
+            <div class="bg-white p-6 rounded-3xl border border-stone-200 shadow-xs flex flex-col items-center justify-center hover:shadow-md transition cursor-pointer">
+                <div class="w-12 h-12 bg-rose-50 rounded-2xl mb-3 flex items-center justify-center text-rose-700 font-bold">🍨</div>
+                <span class="text-xs font-black uppercase text-stone-900">Desserts</span>
+            </div>
+            <div class="bg-white p-6 rounded-3xl border border-stone-200 shadow-xs flex flex-col items-center justify-center hover:shadow-md transition cursor-pointer">
+                <div class="w-12 h-12 bg-rose-50 rounded-2xl mb-3 flex items-center justify-center text-rose-700 font-bold">🍪</div>
+                <span class="text-xs font-black uppercase text-stone-900">Cookies</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         4. BESTSELLERS (4 CARDS DE PRODUCTOS)
+         ========================================== -->
+    <section class="max-w-7xl mx-auto px-6 py-6">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-black uppercase text-stone-900">Bestsellers from Across the Country</h2>
+            <span class="text-xs font-bold text-rose-700 hover:underline cursor-pointer">VIEW ALL</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            
+            <!-- Card 1 -->
+            <div class="bg-white p-4 rounded-3xl border border-stone-200 shadow-xs flex flex-col justify-between relative">
+                <span class="absolute top-4 left-4 text-rose-500 text-xs">❤️</span>
+                <div class="w-full h-32 bg-stone-100 rounded-2xl mb-3 flex items-center justify-center text-stone-400 text-xs">[ Foto ]</div>
+                <div>
+                    <h3 class="font-bold text-xs text-stone-900">Rich Chocolate Truffle Cake</h3>
+                    <div class="flex items-center gap-1 my-1">
+                        <span class="text-amber-400 text-[10px]">★★★★★</span>
+                        <span class="text-[9px] text-stone-400">(320)</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-3 pt-2 border-t border-stone-50">
+                        <span class="font-black text-stone-900 text-sm">₹599</span>
+                        <button class="bg-rose-700 text-white px-3 py-1 rounded-xl text-[10px] font-bold">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-4 rounded-3xl border border-stone-200 shadow-xs flex flex-col justify-between relative">
+                <span class="absolute top-4 left-4 text-rose-500 text-xs">❤️</span>
+                <div class="w-full h-32 bg-stone-100 rounded-2xl mb-3 flex items-center justify-center text-stone-400 text-xs">[ Foto ]</div>
+                <div>
+                    <h3 class="font-bold text-xs text-stone-900">Choco Chip Truffle Cake</h3>
+                    <div class="flex items-center gap-1 my-1">
+                        <span class="text-amber-400 text-[10px]">★★★★★</span>
+                        <span class="text-[9px] text-stone-400">(210)</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-3 pt-2 border-t border-stone-50">
+                        <span class="font-black text-stone-900 text-sm">₹649</span>
+                        <button class="bg-rose-700 text-white px-3 py-1 rounded-xl text-[10px] font-bold">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-4 rounded-3xl border border-stone-200 shadow-xs flex flex-col justify-between relative">
+                <span class="absolute top-4 left-4 text-rose-500 text-xs">❤️</span>
+                <div class="w-full h-32 bg-stone-100 rounded-2xl mb-3 flex items-center justify-center text-stone-400 text-xs">[ Foto ]</div>
+                <div>
+                    <h3 class="font-bold text-xs text-stone-900">Tropical Fruit N Almond Cake</h3>
+                    <div class="flex items-center gap-1 my-1">
+                        <span class="text-amber-400 text-[10px]">★★★★★</span>
+                        <span class="text-[9px] text-stone-400">(150)</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-3 pt-2 border-t border-stone-50">
+                        <span class="font-black text-stone-900 text-sm">₹720</span>
+                        <button class="bg-rose-700 text-white px-3 py-1 rounded-xl text-[10px] font-bold">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-4 rounded-3xl border border-stone-200 shadow-xs flex flex-col justify-between relative">
+                <span class="absolute top-4 left-4 text-rose-500 text-xs">❤️</span>
+                <div class="w-full h-32 bg-stone-100 rounded-2xl mb-3 flex items-center justify-center text-stone-400 text-xs">[ Foto ]</div>
+                <div>
+                    <h3 class="font-bold text-xs text-stone-900">Rich Butterscotch Crunch Cake</h3>
+                    <div class="flex items-center gap-1 my-1">
+                        <span class="text-amber-400 text-[10px]">★★★★★</span>
+                        <span class="text-[9px] text-stone-400">(430)</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-3 pt-2 border-t border-stone-50">
+                        <span class="font-black text-stone-900 text-sm">₹550</span>
+                        <button class="bg-rose-700 text-white px-3 py-1 rounded-xl text-[10px] font-bold">Add</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         5. OUR PROMISE + GALERÍA MOSAICO (6 FOTOS)
+         ========================================== -->
+    <section class="max-w-7xl mx-auto px-6 py-8">
+        <div class="mb-4">
+            <h2 class="text-xl font-black uppercase text-stone-900">Our Promise</h2>
+            <p class="text-xs text-stone-500">There’s no secret spell - only honest fine work!</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            
+            <!-- Izquierda: Promesas e Iconos + Ticket Mágico -->
+            <div class="md:col-span-5 space-y-4">
+                <div class="bg-rose-50/60 p-5 rounded-3xl border border-rose-100 grid grid-cols-4 gap-2 text-center">
+                    <div>
+                        <div class="w-9 h-9 bg-white mx-auto rounded-full flex items-center justify-center text-xs shadow-xs">🚚</div>
+                        <span class="text-[9px] font-bold text-stone-800 block mt-1">ON TIME</span>
+                    </div>
+                    <div>
+                        <div class="w-9 h-9 bg-white mx-auto rounded-full flex items-center justify-center text-xs shadow-xs">✨</div>
+                        <span class="text-[9px] font-bold text-stone-800 block mt-1">500+ DES</span>
+                    </div>
+                    <div>
+                        <div class="w-9 h-9 bg-white mx-auto rounded-full flex items-center justify-center text-xs shadow-xs">📦</div>
+                        <span class="text-[9px] font-bold text-stone-800 block mt-1">2M+ ORD</span>
+                    </div>
+                    <div>
+                        <div class="w-9 h-9 bg-white mx-auto rounded-full flex items-center justify-center text-xs shadow-xs">🥖</div>
+                        <span class="text-[9px] font-bold text-stone-800 block mt-1">BAKED</span>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Ticket Mágico -->
+                <div class="bg-rose-100/50 border border-rose-200 p-5 rounded-3xl flex justify-between items-center">
+                    <div>
+                        <span class="text-[10px] font-black text-rose-700 uppercase">The Magical Ticket</span>
+                        <h4 class="font-bold text-xs text-stone-900 mt-0.5">Add 3 reminders in account & win Rs. 750</h4>
+                    </div>
+                    <button class="bg-rose-700 text-white font-bold px-4 py-2 rounded-xl text-xs shadow-sm hover:bg-rose-800 transition">
+                        UNLOCK NOW
+                    </button>
+                </div>
+            </div>
+
+            <!-- Derecha: Mosaico de 6 Fotos -->
+            <div class="md:col-span-7 grid grid-cols-3 gap-2">
+                <div class="h-28 bg-stone-200 rounded-2xl flex items-center justify-center text-stone-500 text-[10px]">[ Foto 1 ]</div>
+                <div class="h-28 bg-stone-300 rounded-2xl flex items-center justify-center text-stone-500 text-[10px]">[ Foto 2 ]</div>
+                <div class="h-28 bg-stone-200 rounded-2xl flex items-center justify-center text-stone-500 text-[10px]">[ Foto 3 ]</div>
+                <div class="h-28 bg-stone-300 rounded-2xl flex items-center justify-center text-stone-500 text-[10px]">[ Foto 4 ]</div>
+                <div class="h-28 bg-stone-200 rounded-2xl flex items-center justify-center text-stone-500 text-[10px]">[ Foto 5 ]</div>
+                <div class="h-28 bg-stone-300 rounded-2xl flex items-center justify-center text-stone-500 text-[10px]">[ Foto 6 ]</div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         6. CINTILLO / BANNER CERTIFICACIÓN
+         ========================================== -->
+    <section class="max-w-7xl mx-auto px-6 py-6">
+        <div class="bg-rose-800 text-white text-center py-4 px-6 rounded-2xl font-bold text-xs uppercase tracking-wider shadow-md">
+            Dakingo – Your Trusted FSSAI Certified Online Bakery for Every Celebration
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         7. FOOTER COMPLETO
+         ========================================== -->
+    <footer class="bg-white border-t border-stone-200 px-8 py-12 mt-12 text-xs">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-stone-100">
+            <div>
+                <div class="font-black text-base text-rose-700 mb-3">Dakingo</div>
+                <ul class="space-y-1.5 text-stone-600 font-medium">
+                    <li><a href="#" class="hover:text-rose-700">Our Story</a></li>
+                    <li><a href="#" class="hover:text-rose-700">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-rose-700">Centers Near</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-stone-900 mb-3 uppercase tracking-wider">Know Us</h5>
+                <ul class="space-y-1.5 text-stone-600 font-medium">
+                    <li><a href="#" class="hover:text-rose-700">Careers</a></li>
+                    <li><a href="#" class="hover:text-rose-700">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-stone-900 mb-3 uppercase tracking-wider">Need Help</h5>
+                <ul class="space-y-1.5 text-stone-600 font-medium">
+                    <li><a href="#" class="hover:text-rose-700">Cancellation And Refund</a></li>
+                    <li><a href="#" class="hover:text-rose-700">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-stone-900 mb-3 uppercase tracking-wider">Newsletter</h5>
+                <div class="flex gap-2 mt-2">
+                    <input type="email" placeholder="Enter Email Address" class="bg-stone-50 px-3 py-2 rounded-xl text-xs outline-none w-full border border-stone-200 text-stone-900">
+                    <button class="bg-rose-700 text-white px-4 py-2 rounded-xl font-bold hover:bg-rose-800 transition">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-6 text-center text-stone-400 text-[11px]">
+            &copy; 2026 Dakingo. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

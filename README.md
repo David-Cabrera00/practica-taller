@@ -23,3 +23,31 @@
 - De Azul a Naranja: Buscar `blue-600` -> Reemplazar por `orange-600`
 - De Azul a Rosa/Vino: Buscar `blue-600` -> Reemplazar por `rose-700`
 - De Azul a Esmeralda: Buscar `blue-600` -> Reemplazar por `emerald-600`
+
+# 🚀 Guía Definitiva y Chuleta: Examen Pixel Perfect
+
+Guía de referencia rápida y estructura explicada desde cero para maquetar interfaces web profesionales usando **HTML5**, **Tailwind CSS (CDN)**, **Sublime Text** y **Git**.
+
+---
+
+## 📂 1. Estructura Ideal del Proyecto
+Organiza tus carpetas de la siguiente manera para mantener el orden y acceder rápidamente a los componentes:
+
+```text
+mi-proyecto-examen/
+│
+├── index.html              <-- Lienzo en blanco principal de trabajo
+├── README.md               <-- Esta guía de referencia rápida
+│
+├── img/                    <-- Carpeta para guardar tus imágenes locales
+│   ├── logo.png
+│   └── producto-1.jpg
+│
+└── componentes/            <-- Librería de bloques reutilizables
+    ├── 01-navbars.html
+    ├── 02-heroes.html
+    ├── 03-cards.html
+    ├── 04-features.html
+    ├── 05-collages.html
+    ├── 06-banners.html
+    └── 07-footers.html

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Pixel Perfect - Concesionario & Rent-a-Car</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F8FAFC] text-slate-900 font-sans antialiased">
+
+    <!-- 1. NAVBAR SUPERIOR -->
+    <header class="flex justify-between items-center px-8 py-4 bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="flex items-center gap-8">
+            <div class="flex items-center gap-2 font-black text-lg tracking-tight text-red-600">
+                <span class="w-8 h-8 bg-red-600 text-white rounded-xl flex items-center justify-center text-xs font-black">DH</span>
+                DRIVEHUB
+            </div>
+            <nav class="hidden md:flex gap-6 text-xs font-black text-slate-700 tracking-wider">
+                <a href="#" class="hover:text-red-600 transition">INVENTARIO</a>
+                <a href="#" class="hover:text-red-600 transition">RENTAS</a>
+                <a href="#" class="hover:text-red-600 transition">FINANCIAMIENTO</a>
+                <a href="#" class="hover:text-red-600 transition">TALLER & SERVICIOS</a>
+            </nav>
+        </div>
+        <div class="flex items-center gap-4">
+            <span class="text-xs font-bold text-slate-600 hidden lg:inline">📞 +57 (300) 000-0000</span>
+            <button class="bg-red-600 text-white px-6 py-2.5 rounded-full font-bold text-xs shadow-md hover:bg-red-700 transition tracking-wider">
+                COTIZAR VEHÍCULO
+            </button>
+        </div>
+    </header>
+
+    <!-- 2. HERO CON BARRA DE FILTROS MULTI-VARIABLE -->
+    <section class="max-w-7xl mx-auto px-6 py-10">
+        <div class="bg-slate-900 text-white rounded-[2.5rem] p-8 md:p-12 relative overflow-hidden shadow-2xl">
+            <div class="max-w-2xl space-y-4 mb-8">
+                <span class="bg-red-600/20 text-red-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-red-500/30">Modelos 2026 Disponibles</span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight leading-none">
+                    Encuentra el Auto Perfecto al Mejor Precio
+                </h1>
+                <p class="text-slate-400 text-xs md:text-sm">
+                    Autos certificados, entrega inmediata, garantía de fábrica y opciones de leasing sin cuota inicial.
+                </p>
+            </div>
+
+            <!-- Barra de búsqueda rápida de inventario -->
+            <div class="bg-white text-slate-900 p-4 rounded-3xl shadow-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 items-center">
+                <div>
+                    <label class="block text-[10px] font-black uppercase text-slate-400 mb-1">Tipo</label>
+                    <select class="w-full text-xs font-bold bg-slate-50 border border-slate-200 rounded-xl p-2 outline-none">
+                        <option>SUV / Camioneta</option>
+                        <option>Sedán Ejecutivo</option>
+                        <option>Deportivo / Coupe</option>
+                        <option>100% Eléctrico</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-black uppercase text-slate-400 mb-1">Marca</label>
+                    <select class="w-full text-xs font-bold bg-slate-50 border border-slate-200 rounded-xl p-2 outline-none">
+                        <option>Todas las marcas</option>
+                        <option>BMW</option>
+                        <option>Audi</option>
+                        <option>Mercedes-Benz</option>
+                        <option>Toyota</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-black uppercase text-slate-400 mb-1">Presupuesto Máximo</label>
+                    <select class="w-full text-xs font-bold bg-slate-50 border border-slate-200 rounded-xl p-2 outline-none">
+                        <option>Hasta $120M COP</option>
+                        <option>Hasta $200M COP</option>
+                        <option>Más de $250M COP</option>
+                    </select>
+                </div>
+                <div class="md:pt-4">
+                    <button class="w-full bg-red-600 text-white font-bold text-xs py-2.5 rounded-xl hover:bg-red-700 transition shadow-md">
+                        Buscar Inventario
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. GRILLA DE VEHÍCULOS (4 CARDS CON FICHAS TÉCNICAS COMPLETAS) -->
+    <section class="max-w-7xl mx-auto px-6 py-6">
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h2 class="text-xl font-black uppercase tracking-wide text-slate-900">Vehículos Destacados</h2>
+                <p class="text-xs text-slate-500">Unidades verificadas con historial 100% asegurable</p>
+            </div>
+            <span class="text-xs font-bold text-red-600 hover:underline cursor-pointer">VER CATÁLOGO COMPLETO →</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            
+            <!-- Card Auto 1 -->
+            <div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-md transition relative">
+                <span class="absolute top-4 left-4 bg-slate-900 text-white text-[9px] font-bold px-2 py-0.5 rounded-full">2026</span>
+                <span class="absolute top-4 right-4 bg-red-100 text-red-700 text-[9px] font-bold px-2 py-0.5 rounded-full">En Stock</span>
+                <div class="w-full h-32 bg-slate-100 rounded-2xl mb-3 flex items-center justify-center text-slate-400 text-xs font-mono">
+                    [ Imagen Vehículo ]
+                </div>
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">SUV Compacta</span>
+                    <h3 class="font-bold text-xs text-slate-900 mt-0.5">Apex Turbo AWD</h3>
+                    
+                    <!-- Ficha técnica con micro-chips -->
+                    <div class="grid grid-cols-2 gap-1.5 my-3 text-[10px] text-slate-600 font-medium">
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">⚙️ Automática</span>
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">⛽ Híbrido</span>
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">👥 5 Pasajeros</span>
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">⚡ 215 HP</span>
+                    </div>
+
+                    <div class="flex justify-between items-center pt-2 border-t border-slate-100">
+                        <div>
+                            <span class="text-[9px] text-slate-400 block">Precio Total</span>
+                            <span class="font-black text-sm text-slate-900">$138,900,000</span>
+                        </div>
+                        <button class="bg-red-600 text-white px-3 py-1.5 rounded-xl text-[10px] font-bold hover:bg-red-700">Ver Ficha</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Auto 2 -->
+            <div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-md transition relative">
+                <span class="absolute top-4 left-4 bg-slate-900 text-white text-[9px] font-bold px-2 py-0.5 rounded-full">2025</span>
+                <span class="absolute top-4 right-4 bg-emerald-100 text-emerald-700 text-[9px] font-bold px-2 py-0.5 rounded-full">Renta / Día</span>
+                <div class="w-full h-32 bg-slate-100 rounded-2xl mb-3 flex items-center justify-center text-slate-400 text-xs font-mono">
+                    [ Imagen Vehículo ]
+                </div>
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">Sedán Ejecutivo</span>
+                    <h3 class="font-bold text-xs text-slate-900 mt-0.5">Vanguard Executive</h3>
+                    
+                    <div class="grid grid-cols-2 gap-1.5 my-3 text-[10px] text-slate-600 font-medium">
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">⚙️ Secuencial</span>
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">⛽ Gasolina</span>
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">👥 5 Pasajeros</span>
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">⚡ 180 HP</span>
+                    </div>
+
+                    <div class="flex justify-between items-center pt-2 border-t border-slate-100">
+                        <div>
+                            <span class="text-[9px] text-slate-400 block">Desde</span>
+                            <span class="font-black text-sm text-slate-900">$210,000 <span class="text-[9px] font-normal text-slate-400">/día</span></span>
+                        </div>
+                        <button class="bg-red-600 text-white px-3 py-1.5 rounded-xl text-[10px] font-bold hover:bg-red-700">Rentar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Auto 3 -->
+            <div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-md transition relative">
+                <span class="absolute top-4 left-4 bg-slate-900 text-white text-[9px] font-bold px-2 py-0.5 rounded-full">2026</span>
+                <span class="absolute top-4 right-4 bg-blue-100 text-blue-700 text-[9px] font-bold px-2 py-0.5 rounded-full">100% Eléctrico</span>
+                <div class="w-full h-32 bg-slate-100 rounded-2xl mb-3 flex items-center justify-center text-slate-400 text-xs font-mono">
+                    [ Imagen Vehículo ]
+                </div>
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">CrossOver EV</span>
+                    <h3 class="font-bold text-xs text-slate-900 mt-0.5">VoltPulse Electra</h3>
+                    
+                    <div class="grid grid-cols-2 gap-1.5 my-3 text-[10px] text-slate-600 font-medium">
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">⚙️ Monomarcha</span>
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">🔋 480km Auton.</span>
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">👥 5 Pasajeros</span>
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">⚡ 320 HP</span>
+                    </div>
+
+                    <div class="flex justify-between items-center pt-2 border-t border-slate-100">
+                        <div>
+                            <span class="text-[9px] text-slate-400 block">Precio Total</span>
+                            <span class="font-black text-sm text-slate-900">$185,000,000</span>
+                        </div>
+                        <button class="bg-red-600 text-white px-3 py-1.5 rounded-xl text-[10px] font-bold hover:bg-red-700">Ver Ficha</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Auto 4 -->
+            <div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-md transition relative">
+                <span class="absolute top-4 left-4 bg-slate-900 text-white text-[9px] font-bold px-2 py-0.5 rounded-full">2026</span>
+                <span class="absolute top-4 right-4 bg-red-100 text-red-700 text-[9px] font-bold px-2 py-0.5 rounded-full">Sport Edition</span>
+                <div class="w-full h-32 bg-slate-100 rounded-2xl mb-3 flex items-center justify-center text-slate-400 text-xs font-mono">
+                    [ Imagen Vehículo ]
+                </div>
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase">Coupe Deportivo</span>
+                    <h3 class="font-bold text-xs text-slate-900 mt-0.5">Monza GT-R TwinTurbo</h3>
+                    
+                    <div class="grid grid-cols-2 gap-1.5 my-3 text-[10px] text-slate-600 font-medium">
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">⚙️ Paddle Shift</span>
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">⛽ Extra</span>
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">👥 4 Pasajeros</span>
+                        <span class="bg-slate-50 p-1 rounded-lg border border-slate-100">⚡ 410 HP</span>
+                    </div>
+
+                    <div class="flex justify-between items-center pt-2 border-t border-slate-100">
+                        <div>
+                            <span class="text-[9px] text-slate-400 block">Precio Total</span>
+                            <span class="font-black text-sm text-slate-900">$295,000,000</span>
+                        </div>
+                        <button class="bg-red-600 text-white px-3 py-1.5 rounded-xl text-[10px] font-bold hover:bg-red-700">Ver Ficha</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. CONTADORES DE ESTADÍSTICAS -->
+    <section class="max-w-7xl mx-auto px-6 py-8">
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <div class="text-2xl font-black text-slate-900">+1,400</div>
+                <div class="text-[11px] text-slate-500 font-medium mt-1">Autos Entregados</div>
+            </div>
+            <div>
+                <div class="text-2xl font-black text-slate-900">100%</div>
+                <div class="text-[11px] text-slate-500 font-medium mt-1">Peritaje Certificado</div>
+            </div>
+            <div>
+                <div class="text-2xl font-black text-slate-900">48 Horas</div>
+                <div class="text-[11px] text-slate-500 font-medium mt-1">Aprobación de Crédito</div>
+            </div>
+            <div>
+                <div class="text-2xl font-black text-slate-900">4.9 / 5</div>
+                <div class="text-[11px] text-slate-500 font-medium mt-1">Satisfacción Clientes</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-slate-950 text-white px-8 py-12 mt-12 text-xs">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-900">
+            <div>
+                <div class="font-black text-sm text-red-500 mb-2">DRIVEHUB MOTORS</div>
+                <p class="text-slate-400 text-[11px]">Líderes en compra, venta y arrendamiento de vehículos seleccionados.</p>
+            </div>
+            <div>
+                <h5 class="font-bold uppercase tracking-wider mb-3">Modelos</h5>
+                <ul class="space-y-1.5 text-slate-400">
+                    <li><a href="#" class="hover:text-white">Camionetas SUV</a></li>
+                    <li><a href="#" class="hover:text-white">Gama Eléctrica EV</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold uppercase tracking-wider mb-3">Servicios</h5>
+                <ul class="space-y-1.5 text-slate-400">
+                    <li><a href="#" class="hover:text-white">Financiamiento Bancario</a></li>
+                    <li><a href="#" class="hover:text-white">Consignación de Vehículos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold uppercase tracking-wider mb-3">Sedes</h5>
+                <p class="text-slate-400 text-[11px]">Atención de Lunes a Sábado en nuestras salas de exhibición principales.</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-6 text-center text-slate-500 text-[11px]">
+            &copy; 2026 DriveHub Motors S.A.S. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
