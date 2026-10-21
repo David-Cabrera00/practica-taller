@@ -1,0 +1,56 @@
+<section class="mx-auto max-w-7xl px-5 py-10">
+
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+
+        <!-- SIDEBAR -->
+        <aside class="h-fit rounded-2xl border border-gray-200 p-5">
+
+            <h2 class="text-lg font-black">Filtros</h2>
+
+            <h3 class="mb-3 mt-6 text-sm font-bold">Categorías</h3>
+
+            <div class="space-y-3 text-sm">
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" class="accent-orange-600">
+                    Todos los productos
+                </label>
+
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" class="accent-orange-600">
+                    Pizzas
+                </label>
+
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" class="accent-orange-600">
+                    Postres
+                </label>
+
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" class="accent-orange-600">
+                    Bebidas
+                </label>
+            </div>
+
+            <h3 class="mb-3 mt-6 text-sm font-bold">Precio máximo</h3>
+
+            <input
+                type="range"
+                min="0"
+                max="100000"
+                class="w-full accent-orange-600"
+            >
+
+            <button class="mt-5 w-full rounded-lg bg-stone-900 px-4 py-3 font-bold text-white">
+                Aplicar filtros
+            </button>
+
+        </aside>
+
+        <!-- PRODUCTOS -->
+        <div class="grid grid-cols-2 gap-4 md:col-span-3 lg:grid-cols-3">
+            <!-- Pega aquí tus tarjetas de productos -->
+        </div>
+
+    </div>
+
+</section>
